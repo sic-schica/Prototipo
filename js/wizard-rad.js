@@ -38,7 +38,7 @@ $(document).ready(function () {
         if (isValid)
             nextStepWizard.removeClass('disabled').trigger('click');
     });
-	
+
 	allPreviewBtn.click(function(){
 		var curStep = $(this).closest(".setup-content"),
             curStepBtn = curStep.attr("id"),
@@ -47,6 +47,5 @@ $(document).ready(function () {
 	});
 
     $('div.setup-panel div a.stepwizard-active').trigger('click');
+
 });
-
-

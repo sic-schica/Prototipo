@@ -144,22 +144,25 @@
                 <a class="nav-link active" data-toggle="tab" href="#infogeneral" role="tab">Información general</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#documentos" role="tab">Documentos</a>
+                <a class="nav-link" data-toggle="tab" href="#documentos" role="tab">Lista radicados y actos </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#ingresoDespacho" role="tab">Ingresar al despacho</a>
+                <a class="nav-link" data-toggle="tab" href="#documentosTramite" role="tab">Lista documentos de tramite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#trasnferirExpediente" role="tab">Trasnferir expediente</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#radicacion" role="tab">Radicar</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#generarDocumentoTramite" role="tab">Generar documento de tramite</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#notificacion" role="tab">Notificaciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#etapas" role="tab">Historial etapas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#costas" role="tab">Costas</a>
+                <a class="nav-link" data-toggle="tab" href="#historial" role="tab">Historial</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#archivo" role="tab">Archivo</a>
@@ -359,7 +362,7 @@
               </div>
               <!--END Panel Info General-->
               <!--Panel Ingresar al Despacho-->
-              <div class="tab-pane fade" id="ingresoDespacho" role="tabpanel">
+              <div class="tab-pane fade" id="trasnferirExpediente" role="tabpanel">
                 <div class="card-body">
                   <form class="formBox">
                     <div class="row">
@@ -423,7 +426,7 @@
                       <tr>
                         <td>01</td>
                         <td>Entrada</td>
-                        <td><a data-toggle="modal" href="" data-target="#documentInfoModal">17-11067- -3-0</a></td>
+                        <td><a data-toggle="modal" href="" data-target="#radInfoModal">17-11067- -3-0</a></td>
                         <td>2018-01-23 08:42</td>
                         <td>Demanda protección consumidor jurisdiccional  - demanda  -  presentación</td>
                         <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
@@ -431,7 +434,7 @@
                       <tr>
                         <td>02</td>
                         <td>Auto</td>
-                        <td><a data-toggle="modal" href="" data-target="#documentInfoModal">11681</a></td>
+                        <td><a data-toggle="modal" href="" data-target="#autoInfoModal">11681</a></td>
                         <td>2018-02-06 00:00</td>
                         <td>Auto inadminte demanda - Demanda protección al consumidor jurisdiccional</td>
                         <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
@@ -439,30 +442,72 @@
                       <tr>
                         <td>02</td>
                         <td>Auto</td>
-                        <td><a data-toggle="modal" href="" data-target="#documentInfoModal">11747</a></td>
+                        <td><a data-toggle="modal" href="" data-target="#autoInfoModal">11747</a></td>
                         <td>2018-02-06 00:00</td>
                         <td>Auto inadminte demanda - Demanda protección al consumidor jurisdiccional</td>
+                        <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
                       </tr>
 
                       <tr>
                         <td>03</td>
                         <td>Traslado</td>
-                        <td><a data-toggle="modal" href="" data-target="#documentInfoModal">17-11067- -3-1</a></td>
+                        <td><a data-toggle="modal" href="" data-target="#radInfoModal">17-11067- -3-1</a></td>
                         <td>2018-02-06 07:03</td>
                         <td>Demanda protección consumidor jurisdiccional  - demanda  -  actuación inhabilitada</td>
+                        <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
                       </tr>
                       <tr>
                         <td>04</td>
                         <td>Traslado</td>
-                        <td><a data-toggle="modal" href="" data-target="#documentInfoModal">17-11067- -3-2</a></td>
+                        <td><a data-toggle="modal" href="" data-target="#radInfoModal">17-11067- -3-2</a></td>
                         <td>2018-01-23 08:42</td>
-                        <td>Demanda protección consumidor jurisdiccional  - demanda  -   decision - traslado secretaria general</td>
+                        <td>Demanda protección consumidor jurisdiccional  - demanda  -   decision - traslado secretaría general</td>
+                        <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
               <!--END Panel Documentos-->
+              <!--Panel Documentos de tramite-->
+              <div class="tab-pane fade" id="documentosTramite" role="tabpanel">
+                <!-- Tabla de radicados-->
+                <div class="table-responsive">
+                  <table class="table table-hover table-responsive-md table-fixed" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Subtipo de documento</th>
+                        <th>Observaciones</th>
+                        <th>Pantilla</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>Borrador Carta</td>
+                        <td>2018-01-23 08:42</td>
+                        <td>Comunicación</td>
+                        <td>Requerimiento DIAN</td>
+                        <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>02</td>
+                        <td>Borrador Auto</td>
+                        <td>2018-02-06 00:00</td>
+                        <td>Auto inadminte demanda</td>
+                        <td></td>
+                        <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!--END Panel Documentos de tramite-->
               <!--Panel Radicación-->
               <div class="tab-pane fade" id="radicacion" role="tabpanel">
                 <div class="card-body">
@@ -472,19 +517,19 @@
                       <div class="stepwizard">
                         <div class="stepwizard-row setup-panel">
                           <div class="stepwizard-step">
-                            <a href="#step-1" class="stepwizard-active"><i class="fa fa-home"></i></a>
+                            <a href="#step-1" class="stepwizard-active"  data-toggle="tooltip" title="Datos generales"><i class="fa fa-home"></i></a>
                           </div>
                           <div class="stepwizard-step">
-                            <a href="#step-2" class="stepwizard-disable disabled" disabled="disabled"><i class="fa fa-user"></i></a>
+                            <a href="#step-2" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Ingreso de partes"><i class="fa fa-user"></i></a>
                           </div>
                           <div class="stepwizard-step">
-                            <a href="#step-3" class="stepwizard-disable disabled" disabled="disabled"><i class="fa fa-file-text"></i></a>
+                            <a href="#step-3" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Plantilla"><i class="fa fa-file-text"></i></a>
                           </div>
                           <div class="stepwizard-step">
-                            <a href="#step-4" class="stepwizard-disable disabled" disabled="disabled"><i class="fa fa-paperclip"></i></a>
+                            <a href="#step-4" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Documentos adjuntos"><i class="fa fa-paperclip"></i></a>
                           </div>
                           <div class="stepwizard-step">
-                            <a href="#step-5" class="stepwizard-disable disabled" disabled="disabled"><i class="fa fa-check"></i></a>
+                            <a href="#step-5" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Radicar"><i class="fa fa-check"></i></a>
                           </div>
                         </div>
                       </div>
@@ -568,14 +613,7 @@
                                   <input type="text" name="" class="input" required="required">
                                 </div>
                               </div>
-                              <div class="col-lg-1 form-group">
-                                <div class="inputBox">
-                                  <div class="inputText"># Rotulo</div>
-                                  <input type="text" name="" class="input" required="required">
-                                </div>
-                              </div>
-
-                              <div class="col-lg-2 sic-checkbox">
+                              <div class="col-lg-3 sic-checkbox">
                                 <div class="sic-checkbox-primary">
                                   <input type="checkbox" name="checkbox" id="checkbox2"/>
                                   <label for="checkbox2">Genera Carta</label>
@@ -881,7 +919,7 @@
                               </div>
                             </div>
                             <div id="panel-traslado" class="col-lg-12 collapse">
-                              <h5> Ingreso de Dependencia </h5>
+                              <h5> Ingreso de dependencia </h5>
                               <hr>
                               <div class="card-body">
                                 <div class="row">
@@ -1106,7 +1144,7 @@
                               <div class="col-lg-1"></div>
                               <div class="col-lg-5">
                                 <div>
-                                  Tipo de Radicación: Salida
+                                  Tipo de radicación: Salida
                                   <div class="comment-text">
                                     <br>
                                     <div>TRA: 301 Bienesservi</div>
@@ -1123,7 +1161,7 @@
                               </div>
                               <div class="col-lg-5">
                                 <div>
-                                  Cantidad de Radicados a generar: 2
+                                  Cantidad de radicados a generar: 2
                                   <div class="comment-text">
                                     <br>
                                     <div>Plantilla: Contestación recurso</div>
@@ -1154,6 +1192,481 @@
                 </div>
               </div>
               <!--END Panel Radicación-->
+              <!--Panel Generar documento tramite-->
+              <div class="tab-pane fade" id="generarDocumentoTramite" role="tabpanel">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-1">
+                      <!-- Step wizard -->
+                      <div class="stepwizard">
+                        <div class="stepwizard-row setup-panel-doc">
+                          <div class="stepwizard-step">
+                            <a href="#step-2-1" class="stepwizard-active"  data-toggle="tooltip" title="Datos generales"><i class="fa fa-home"></i></a>
+                          </div>
+                          <div class="stepwizard-step">
+                            <a href="#step-2-2" class="stepwizard-disable disabled" data-toggle="tooltip" title="Ingreso de partes" disabled="disabled"><i class="fa fa-user"></i></a>
+                          </div>
+                          <div class="stepwizard-step">
+                            <a href="#step-2-3" class="stepwizard-disable disabled" data-toggle="tooltip" title="Plantilla" disabled="disabled"><i class="fa fa-file-text"></i></a>
+                          </div>
+                          <div class="stepwizard-step">
+                            <a href="#step-2-4" class="stepwizard-disable disabled" data-toggle="tooltip" title="Guardar documento" disabled="disabled"><i class="fa fa-check"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END Step wizard -->
+                    </div>
+                    <div class="col-lg-11">
+                      <form class="formBox" role="form">
+                        <!-- Datos generales -->
+                        <div class="setup-content-doc" id="step-2-1">
+                          <h5> Datos generales </h5>
+                          <hr>
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-lg-5 form-group">
+                                <div class="inputBox">
+                                  <div class="inputText">Tipo Documento</div>
+                                  <select id="tipoRadicacion" class="input" required="required">
+                                    <option selected></option>
+                                    <option>Acta</option>
+                                    <option>Auto</option>
+                                    <option>Generado por el Sistema</option>
+                                    <option>Carta</option>
+                                    <option>Memorando</option>
+                                    <option>Resolución</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-5 form-group">
+                                <div class="inputBox">
+                                  <div class="inputText">Subtipo Documento</div>
+                                  <select id="tipoRadicacion" class="input" required="required">
+                                    <option selected></option>
+                                    <option>Admite demanda</option>
+                                    <option>Inadmite demanda</option>
+                                    <option>Dejar sin valor y efecto</option>
+                                    <option>Requerimiento otra entidad</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 form-group">
+                                <div class="inputBox">
+                                  <div class="inputText"># Folios</div>
+                                  <input type="text" name="" class="input" required="required">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div class="inputBox ">
+                                  <div class="inputText">Observaciones</div>
+                                  <textarea class="input" rows="2"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
+                          </div>
+                        </div>
+                        <!-- Fin Datos generales -->
+                        <!-- Partes -->
+                        <div class="setup-content-doc" id="step-2-2">
+                          <div class="row">
+                            <div id="panel-salida" class="col-lg-12">
+                              <h5> Ingreso de partes </h5>
+                              <hr>
+                              <div class="card-body">
+                                <div class="panel sic-panel-pills">
+                                  <div class="panel-heading">
+                                    <ul class="nav">
+                                      <li>
+                                        <a class="nav-link active" data-toggle="pill" href="#list">Partes en el expediente</a>
+                                      </li>
+                                      <li>
+                                        <a class="nav-link" data-toggle="pill" href="#consult">Buscar parte</a>
+                                      </li>
+                                      <li>
+                                        <a class="nav-link" data-toggle="pill" href="#add_person">Crear parte</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="tab-content sic-tab-content">
+                                    <div id="list" class="tab-pane fade in show active">
+                                      <div class="row">
+                                        <div class="col-lg-12 form-group">
+                                          <br>
+                                          <select multiple class="form-control">
+                                            <optgroup label="Demandante(s)">
+                                              <option>Luis Carrillo</option>
+                                              <option>Patricia Villanueva</option>
+                                            </optgroup>
+                                            <optgroup label="Demandado(s)">
+                                              <option>Colchones Dormir Bien S.A.</option>
+                                            </optgroup>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="consult" class="tab-pane fade">
+                                      <br>
+                                      <div class="row">
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Tipo Documento</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>...</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Número Documento</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-4 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Nombre</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-1 align-bottom">
+                                          <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addressPersonModal">Consultar </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="add_person" class="tab-pane fade">
+                                      <br>
+                                      <div class="row">
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Tipo Documento</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Cédula de ciudadania</option>
+                                              <option>Identificación internacional</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Número Documento</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Genero</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Femenino</option>
+                                              <option>Masculino</option>
+                                              <option>No determinado</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Saludo</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Señor</option>
+                                              <option>Ingeniero</option>
+                                              <option>Señorita</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Tratamiento</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Estiado(a)</option>
+                                              <option>Excelentisimo(a)</option>
+                                              <option>Apreciado</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Primer Nombre</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Segundo Nombre</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Primer Apellido</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Segundo Apellido</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-1">
+                                          <div class="inputBox">
+                                            <div class="inputText">Dirección</div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Tipo</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Principal</option>
+                                              <option>E-mail Correo electrónico</option>
+                                              <option>Apartado aereo</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Departamento</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Cundinamarca</option>
+                                              <option>Norte de Santander</option>
+                                              <option>Putumayo</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Ciudad</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Bogotá DC</option>
+                                              <option>Barranquilla</option>
+                                              <option>San Pedro de los Milagros</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-4 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Dirección</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-lg-1">
+                                          <div class="inputBox">
+                                            <div class="inputText">Teléfono</div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Tipo</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Fijo</option>
+                                              <option>Celular</option>
+                                              <option>Fax</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Número</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                          <div class="inputBox">
+                                            <div class="inputText">Correo</div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-2 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Tipo</div>
+                                            <select id="inputState" class="input">
+                                              <option selected></option>
+                                              <option>Personal</option>
+                                              <option>Empresa</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-4 form-group">
+                                          <div class="inputBox">
+                                            <div class="inputText">Correo electrónico</div>
+                                            <input type="text" name="" class="input">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-lg-12">
+                                          <button class="btn btn-primary pull-right" type="button" > Agregar </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <table class="table table-hover text-center">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Documento</th>
+                                          <th scope="col">Nombre</th>
+                                          <th scope="col">Dirección</th>
+                                          <th scope="col">Teléfono</th>
+                                          <th scope="col"></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">CC 1.036.961.782</th>
+                                          <td>Luis Carrillo</td>
+                                          <td>Cll 90 # 45-10 Int 5 Apt 208 Bogotá</td>
+                                          <td>3105698740</td>
+                                          <td>
+                                            <a class="text-danger">
+                                              <i class="fa fa-trash"></i>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">CC 50.239.654</th>
+                                          <td>Patricia Villanueva</td>
+                                          <td>Cll 90 # 45-10 Int 5 Apt 208 Bogotá</td>
+                                          <td>3215987621</td>
+                                          <td>
+                                            <a class="text-danger">
+                                              <i class="fa fa-trash"></i>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pull-right">
+                            <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
+                            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
+                          </div>
+                        </div>
+                        <!-- Fin Partes -->
+                        <!-- Plantilla -->
+                        <div class="setup-content-doc" id="step-2-3">
+                          <h5> Plantilla </h5>
+                          <hr>
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="inputBox">
+                                  <div class="inputText">Plantilla</div>
+                                  <select id="inputState" class="input sic-input-90" required="required">
+                                    <option selected></option>
+                                    <option>Contestación recurso</option>
+                                  </select>
+                                  <a href="" id="file-button-download">
+                                    <i class="fa fa-download panel-info-icon"></i>
+                                  </a>
+                                </div>
+                                <div class="inputBox">
+                                  <div class="inputText">Adjuntar</div>
+                                  <input type="file" id="files-input-upload" style="display:none">
+                                  <input type="text" id="file-input-name" class="input sic-input-90">
+                                  <a href="" id="file-button-upload">
+                                    <i class="fa fa-upload panel-info-icon"></i>
+                                  </a>
+                                </div>
+                                <div class="inputBox">
+                                  <div class="inputText">Elaboró</div>
+                                  <input type="text" name="proyecto" class="input" required="required">
+                                </div>
+                                <div class="inputBox">
+                                  <div class="inputText">Revisó</div>
+                                  <input type="text" name="Revisio" class="input" required="required">
+                                </div>
+                                <div class="inputBox">
+                                  <div class="inputText">Aprobó</div>
+                                  <input type="text" name="Firmo" class="input" required="required">
+                                </div>
+                              </div>
+                              <div class="col-lg-8">
+                                <div class="card mb-3 sic-height-90">
+                                  <div class="card-header">
+                                    <i class="fa fa-search"></i> Vista preliminar
+                                  </div>
+                                  <div class="card-body">
+
+                                  </div>
+                                  <div class="card-footer text-right">
+                                    Página 1 de 3
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pull-right">
+                              <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
+                              <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Fin Plantilla -->
+                        <!-- Guardar Documento -->
+                        <div class="setup-content-doc" id="step-2-4">
+                          <h5> Resumen documento </h5>
+                          <hr>
+                          <div class="card-body">
+                            <div class="row panel-info">
+                              <div class="col-lg-1"></div>
+                              <div class="col-lg-5">
+                                <div>
+                                  Tipo de documento: Auto
+                                  <br>
+                                  <div class="mic-info">
+                                    <div>Plantilla: Auto inadminte demanda</div>
+                                    <div>Elaboró: Juan Perez </div>
+                                    <div>Revisó: Diana Gonzalez </div>
+                                    <div>Aprobó: Luisa Ramirez </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-5">
+                                <div>
+                                  Subtipo de documento: Inadminte demanda
+                                  <br>
+                                  <div class="mic-info">
+                                    <div>Cantidad de doumentos a generar: 2</div>
+                                    <div>Folios por radicado: 3</div>
+                                    <div>Total destinatarios : 2</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pull-right">
+                              <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
+                              <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#infoModal">
+                                <i class="fa fa-flag"></i> Guardar
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Guardar Documento -->
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END Panel Generar documento tramite-->
               <!--Panel Notificación-->
               <div class="tab-pane fade" id="notificacion" role="tabpanel">
                 <div class="panel sic-panel-pills w-75 mx-auto">
@@ -1293,16 +1806,106 @@
                 </div>
               </div>
               <!--END Panel Notificación-->
-              <!--Panel Etapas-->
-              <div class="tab-pane fade" id="etapas" role="tabpanel">
-                Etapas
+              <!--Panel Historial-->
+              <div class="tab-pane fade" id="historial" role="tabpanel">
+                <div class="panel sic-panel-pills w-75 mx-auto">
+                  <div class="panel-heading">
+                    <ul class="nav">
+                      <li>
+                        <a class="nav-link active" data-toggle="pill" href="#historialEtapas">Etapas</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" data-toggle="pill" href="#historialAsignaciones">Asignaciones</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content sic-tab-content">
+                    <div id="historialEtapas" class="tab-pane fade in show active">
+                      <table class="table table-hover text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Grupo</th>
+                            <th scope="col">Etapa</th>
+                            <th scope="col">Último Abogado</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">18-03-30</th>
+                            <td>Calificación</td>
+                            <td>Calificación</td>
+                            <td>Maria Juliana Ríos</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">18-04-24</th>
+                            <td>Defensa</td>
+                            <td>Audiencia</td>
+                            <td>Matías Perez</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">18-05-30</th>
+                            <td>Defensa</td>
+                            <td>Audiencia probatoria</td>
+                            <td>Maria Juliana Ríos</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">18-06-11</th>
+                            <td>Defensa</td>
+                            <td>Audiencia de fallo</td>
+                            <td>Angel Díaz</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">18-07-12</th>
+                            <td>Verificación</td>
+                            <td>Verificación</td>
+                            <td>Maria Juliana Ríos</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">18-09-30</th>
+                            <td>Verificación</td>
+                            <td>Archivo</td>
+                            <td>Carolina Gomez</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div id="historialAsignaciones" class="tab-pane fade">
+                      <table class="table table-hover text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Fijación</th>
+                            <th scope="col">Inicio</th>
+                            <th scope="col">Vencimiento</th>
+                            <th scope="col">Tipo Traslado</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">056</th>
+                            <td>18-03-12</td>
+                            <td>18-03-15</td>
+                            <td>Excepciones de merito</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">056</th>
+                            <td>18-03-12</td>
+                            <td>18-03-15</td>
+                            <td>Excepciones de merito</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">056</th>
+                            <td>18-03-12</td>
+                            <td>18-03-15</td>
+                            <td>Excepciones de merito</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!--END Panel Etapas-->
-              <!--Panel Costas-->
-              <div class="tab-pane fade" id="costas" role="tabpanel">
-                Costas
-              </div>
-              <!--END Panel Costas-->
+              <!--END Panel Historial-->
               <!--Panel Archivo-->
               <div class="tab-pane fade" id="archivo" role="tabpanel">
                 <div class="card-body">
@@ -1600,28 +2203,39 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-3 form-group">
+                <div class="col-lg-2 form-group">
                   <div class="inputBox inputBoxFixed">
                     <div class="inputTextFixed">Primer Nombre</div>
                     <input type="text" name="" class="input" value="Luis">
                   </div>
                 </div>
-                <div class="col-lg-3 form-group">
+                <div class="col-lg-2 form-group">
                   <div class="inputBox inputBoxFixed">
                     <div class="inputTextFixed">Segundo Nombre</div>
                     <input type="text" name="" class="input">
                   </div>
                 </div>
-                <div class="col-lg-3 form-group">
+                <div class="col-lg-2 form-group">
                   <div class="inputBox inputBoxFixed">
                     <div class="inputTextFixed">Primer Apellido</div>
                     <input type="text" name="" class="input" value="Carrillo">
                   </div>
                 </div>
-                <div class="col-lg-3 form-group">
+                <div class="col-lg-2 form-group">
                   <div class="inputBox inputBoxFixed">
                     <div class="inputTextFixed">Segundo Apellido</div>
                     <input type="text" name="" class="input">
+                  </div>
+                </div>
+                <div class="col-lg-4 form-group">
+                  <div class="inputBox inputBoxFixed">
+                    <div class="inputTextFixed">CIIU</div>
+                    <select id="inputState" class="input">
+                      <option></option>
+                      <option selected>0510 Extracción de hulla (carbón de piedra).</option>
+                      <option>0721 Extracción de minerales de uranio y de torio.</option>
+                      <option>1391 Fabricación de tejidos de punto y ganchillo. </option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -1840,7 +2454,7 @@
         </div>
       </div>
       <!-- Document Info Modal -->
-      <div class="modal fade" id="documentInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="radInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-xl" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -1866,7 +2480,7 @@
                 <div class="col-lg-5">
                   <div>
                     <span class="sic-title-label">Actuación: </span>
-                    <p>500 Decisión - Traslado Secretaria General</p>
+                    <p>500 Decisión - Traslado Secretaría General</p>
                   </div>
                 </div>
               </div>
@@ -1925,6 +2539,91 @@
         </div>
       </div>
       <!-- Document Info Modal -->
+      <div class="modal fade" id="autoInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>Acto Número <small class="sic-title-label"> 11681</small> </h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div>
+                    <span class="sic-title-label">Tipo: </span>
+                    <p>Auto</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div>
+                    <span class="sic-title-label">Subtipo: </span>
+                    <p>Auto inadminte demanda</p>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div>
+                    <span class="sic-title-label">Trámite: </span>
+                    <p>400 Demanda Protección Consumidor Jurisdiccional  </p>
+                  </div>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div>
+                      <span class="sic-title-label">Fecha Acto: </span>
+                      <p>18-01-29 10:45</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div>
+                      <span class="sic-title-label">Fecha Notificación: </span>
+                      <p>18-01-29 10:45</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div>
+                      <span class="sic-title-label">Fecha Ejecutoria: </span>
+                      <p>18-01-29 10:45</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div>
+                      <span class="sic-title-label">Fecha Fijación: </span>
+                      <p>18-01-29 10:45</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div>
+                      <span class="sic-title-label">Persona: </span>
+                      <p>Carlos Arturo Cadavid Valderrama</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div>
+                      <span class="sic-title-label">Documento: </span>
+                      <p>CC 1101222222</p>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div>
+                      <span class="sic-title-label">Dirección: </span>
+                      <p>Calle  74 A  73 - 40 Medellín Antioquia Colombia</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Document Info Modal -->
       <div class="modal fade" id="documentViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-xl" role="document">
           <div class="modal-content">
@@ -1956,7 +2655,6 @@
         </div>
       </div>
 
-
       <!-- Bootstrap core JavaScript-->
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1972,7 +2670,8 @@
       <!-- Scrolling tabs JavaScript-->
       <script src="js/jquery.scrolling-tabs.js"></script>
       <!-- Wizard JavaScript-->
-      <script src="js/wizard.js"></script>
+      <script src="js/wizard-rad.js"></script>
+      <script src="js/wizard-doc.js"></script>
       <!-- Dropzone -->
       <script src="js/dropzone.js"></script>
       <!-- Datepicker -->
