@@ -823,6 +823,9 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-info{
 	background-color: #5bc0de;
 }
+.bg-info{
+	background-color: #5bc0de !important;
+}
 
 .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-warning:hover, .btn-warning:not(:disabled):not(.disabled):active {
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);

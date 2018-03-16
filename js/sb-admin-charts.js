@@ -7,7 +7,7 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
+    labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13","14", "15", "16", "17", "18", "19", "20", "21", "22", "22", "23", "24", "25","26","27","28","29","30","31"],
     datasets: [{
       label: "Radicados",
       lineTension: 0.3,
@@ -20,7 +20,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 20,
       pointBorderWidth: 2,
-      data: [820, 910, 750, 660, 540, 680, 920, 1000, 702, 607, 530, 606, 705],
+      data: [700, 600, 750, 660, 540, 680, 720, 650, 702, 607, 530, 606, 705,820, 710, 750, 660, 540, 680, 458, 597, 702, 607, 530, 606, 700,788,780,589,605,751,585],
     }],
   },
   options: {
@@ -103,6 +103,18 @@ var myPieChart = new Chart(ctx, {
     datasets: [{
       data: [12.21, 15.58, 11.25, 8.32, 10.3],
       backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745', '#d754ff'],
+    }],
+  },
+});
+// -- Pie Chart Example
+var ctx = document.getElementById("pieChartPrioritarios");
+var pieChartPrioritarios = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ["Tutelas", "Derechos de petición", "Medias Cutelares"],
+    datasets: [{
+      data: [4, 9, 12],
+      backgroundColor: ['#007bff', '#dc3545', '#ffc107'],
     }],
   },
 });
