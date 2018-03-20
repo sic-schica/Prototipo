@@ -52,7 +52,7 @@
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Radicar</a>
+            <a href="#">Radicación</a>
           </li>
         </ol>
         <div class="card-body">
@@ -549,7 +549,7 @@
                           <div class="inputText">Adjuntar</div>
                           <input type="file" id="files-input-upload" style="display:none">
                           <input type="text" id="file-input-name" class="input sic-input-90">
-                          <a href="" id="file-button-upload">
+                          <a href="#" id="file-button-upload">
                             <i class="fa fa-upload panel-info-icon"></i>
                           </a>
                         </div>
@@ -705,7 +705,7 @@
                     </div>
                     <div class="pull-right">
                       <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
-                      <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#infoModal">
+                      <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#infoModalRadicar">
                         <i class="fa fa-flag"></i> Radicar
                       </button>
                     </div>
@@ -909,7 +909,7 @@
             </div>
           </div>
         </div>
-        
+
         <!--Modal Asignar Radicado Individual-->
         <div class="modal fade" id="asignIndModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-lg" role="document">
@@ -977,6 +977,19 @@
             </div>
           </div>
         </div>
+        <!--Modal Info-->
+        <div class="modal fade" id="infoModalRadicar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                Se ha generado el radicado 18-11035- -3-0.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -989,6 +1002,8 @@
         <script src="js/sb-admin.min.js"></script>
         <!-- Custom scripts for this page-->
         <script src="js/sb-admin-datatables.min.js"></script>
+        <!-- Dropzone -->
+        <script src="js/dropzone.js"></script>
         <!-- Custom menu-->
         <script src="js/menu_secretaria.js"></script>
         <script src="js/form.js"></script>

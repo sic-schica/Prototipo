@@ -552,6 +552,11 @@ input:read-only {
     border-top: 0px;
 }
 
+.table .mic-info {
+	color: #666666;
+	font-size: 11px;
+}
+
 /* End Table */
 
 /* Modal */
