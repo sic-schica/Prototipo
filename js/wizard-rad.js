@@ -26,7 +26,7 @@ $(document).ready(function () {
             nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
             curInputs = curStep.find("input[type='text'],input[type='url'],select"),
             isValid = true;
-/*
+
         $(".form-group").removeClass("has-error");
         for(var i=0; i<curInputs.length; i++){
             if (!curInputs[i].validity.valid){
@@ -34,7 +34,6 @@ $(document).ready(function () {
                 $(curInputs[i]).closest(".form-group").addClass("has-error");
             }
         }
-*/
         if (isValid)
             nextStepWizard.removeClass('disabled').trigger('click');
     });

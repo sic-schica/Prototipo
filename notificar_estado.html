@@ -49,13 +49,13 @@
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Fijar en lista</a>
+            <a href="#">Notificar por estado</a>
           </li>
         </ol>
         <!-- Consulta radicados -->
         <div class="card mb-3">
           <div class="card-header">
-            <i class="fa fa-magic"></i> Consultar radicados pendientes por fijar en lista
+            <i class="fa fa-magic"></i> Consultar autos pendientes por notificar por estado
           </div>
           <div class="card-body">
             <!-- Filtros -->
@@ -63,21 +63,30 @@
               <div >
                 <div class="row">
                   <div class="col-sm-4">
-                    <div class="inputBox ">
-                      <div class="inputText">Número radicado</div>
-                      <input type="text" name="" class="input">
+                    <div class="inputBox">
+                      <div class="inputText">Subtipo</div>
+                      <select id="inputState" class="input" required="required">
+                        <option selected></option>
+                        <option>...</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <div class="inputBox">
                       <div class="inputText">Fecha inicial</div>
                       <input class="input inputDate" id="exampleInputName" type="date">
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <div class="inputBox">
                       <div class="inputText">Fecha final</div>
                       <input class="input inputDate" id="exampleInputName" type="date">
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="inputBox ">
+                      <div class="inputText">Número del auto</div>
+                      <input type="text" name="" class="input">
                     </div>
                   </div>
                 </div>
@@ -87,7 +96,7 @@
               </div>
             </form>
             <hr>
-            <!-- Tabla de fijaciones en lista-->
+            <!-- Tabla de notificacion por estado-->
             <div class="table-responsive">
               <table class="table table-hover table-responsive-md table-fixed" id="fija_lista" width="100%" cellspacing="0">
                 <thead>
@@ -96,14 +105,15 @@
                     <th>Radicado</th>
                     <th>Demandante(s)</th>
                     <th>Demandado(s)</th>
-                    <th>Tipo de traslado</th>
+                    <th>Acto</th>
+                    <th>Subtipo</th>
                     <th><input type="checkbox" /></th>
                   </tr>
                 </thead>
                 <tbody class="text-center">
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -126,12 +136,13 @@
                         </div>
                       </div>
                     </td>
-                    <td>Recurso de reposición con subsidio de apelación</td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Inadminte demanda</td>
                     <td><input type="checkbox" /></td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -154,12 +165,13 @@
                         </div>
                       </div>
                     </td>
-                    <td>Contestació demanda</td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
                     <td><input type="checkbox" /></td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -182,12 +194,13 @@
                         </div>
                       </div>
                     </td>
-                    <td>Excepciones previas</td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
                     <td><input type="checkbox" /></td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -210,12 +223,13 @@
                         </div>
                       </div>
                     </td>
-                    <td>Excepciones de fondo</td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
                     <td><input type="checkbox" /></td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -238,44 +252,16 @@
                         </div>
                       </div>
                     </td>
-                    <td>Recurso de reposición</td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
                     <td><input type="checkbox" /></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
-                    <td class="mic-info">
-                      <div>
-                        Luis Carrillo
-                        <div>
-                          CC 1.036.961.782
-                        </div>
-                      </div>
-                      <div>
-                        Patricia Villanueva
-                        <div>
-                          CC 50.239.654
-                        </div>
-                      </div>
-                    </td>
-                    <td class="mic-info">
-                      <div>
-                        Colchones Dormir Bien S.A.
-                        <div>
-                          NIT: 8003146612-5
-                        </div>
-                      </div>
-                    </td>
-                    <td>Recurso de reposición</td>
-                    <td><input type="checkbox" /></td>
-                  </tr>
-
+                  </tr>                                    
                 </tbody>
               </table>
             </div>
           </div>
           <div class="card-footer">
-            <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#fijacionViewModal">Generar fijación </a>
+            <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#notificacionViewModal">Generar notificación</a>
 
           </div>
         </div>
@@ -324,11 +310,11 @@
           </div>
         </div>
         <!-- Fijacion Info Modal -->
-        <div class="modal fade" id="fijacionViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="notificacionViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog  modal-dialog-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5>Fijación en lista <strong><em># 48 </em></strong>de 2018-03-28 </h5>
+                <h5>Notificación por estado <strong><em># 48 </em></strong>de 2018-03-28 </h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -350,6 +336,68 @@
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" type="button" data-dismiss="modal">Imprimir</button>
+                <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Document Info Modal -->
+        <div class="modal fade" id="documentViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5>Radicado <small class="sic-title-label">EN 18-11067- -3-0</small> </h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="col-lg-12" style="height: 400px;">
+                  <div class="card mb-3 sic-height-90" >
+                    <div class="card-header">
+                      <i class="fa fa-search"></i> Vista preliminar
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                      Página 1 de 3
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Auto Info Modal -->
+        <div class="modal fade" id="autoViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5>Acto Número <small class="sic-title-label"> 2018-11681</small> </h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="col-lg-12" style="height: 400px;">
+                  <div class="card mb-3 sic-height-90" >
+                    <div class="card-header">
+                      <i class="fa fa-search"></i> Vista preliminar
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                      Página 1 de 3
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
               </div>
             </div>
