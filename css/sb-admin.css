@@ -536,25 +536,83 @@ input:read-only {
 
 /* Table */
 
-.table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #007bff;
-	background-color: #ffffff;
-    color: dimgray;
-    font-weight: normal;
-    font-size: 1.05rem;
-    text-align: center;
+ .table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #007bff;
+  background-color: #ffffff;
+  color: dimgray;
+  font-weight: normal;
+  font-size: 1.05rem;
+  text-align: center;
 }
 
 .table td, .table th {
-    padding: .75rem;
-    vertical-align: top;
-    border-top: 0px;
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 0px;
 }
 
 .table .mic-info {
 	color: #666666;
 	font-size: 11px;
+}
+
+/* Checkbox table */
+
+.sic-table-checkbox {
+  clear: both;
+  overflow: hidden;
+}
+
+.sic-table-checkbox input[type="radio"]:empty,
+.sic-table-checkbox input[type="checkbox"]:empty {
+  position: relative;
+  opacity: .5;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sic-table-checkbox input[type="radio"]:empty:before,
+.sic-table-checkbox input[type="checkbox"]:empty:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1em;
+  height: 1em;
+  background: #D1D3D4;
+  border-radius: 20%;
+}
+
+.sic-table-checkbox input[type="radio"]:hover:not(:checked),
+.sic-table-checkbox input[type="checkbox"]:hover:not(:checked) {
+  color: #888;
+}
+
+.sic-table-checkbox input[type="radio"]:hover:not(:checked):before,
+.sic-table-checkbox input[type="checkbox"]:hover:not(:checked):before {
+  content: '\2714';
+  text-indent: .1em;
+  color: #fff;
+  background: #036ee0;
+  opacity: .8;
+  border-radius: 20%;
+}
+
+.sic-table-checkbox input[type="radio"]:checked,
+.sic-table-checkbox input[type="checkbox"]:checked {
+  opacity: 1;
+}
+
+.sic-table-checkbox input[type="radio"]:checked:before,
+.sic-table-checkbox input[type="checkbox"]:checked:before {
+  content: '\2714';
+  text-indent: .1em;
+  color: #fff;
+  background-color: #036EE0;
+  border-radius: 20%;
 }
 
 /* End Table */
@@ -667,7 +725,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-/* Checkbox */
+/* Checkbox form */
 
 .sic-checkbox div {
   clear: both;
