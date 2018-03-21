@@ -137,7 +137,11 @@
                     <th>Evento</th>
                     <th>Actuación</th>
                     <th></th>
-                    <th><input type="checkbox" /></th>
+                    <th>
+                      <div type="checkbox" class="sic-table-checkbox"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -150,7 +154,11 @@
                     <td>319 Ordencompra</td>
                     <td>331 Comunicación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td><input type="checkbox" /></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-folder-open  text-secondary" data-toggle="tooltip" title="Vence en 5 días"></i></td>
@@ -161,7 +169,11 @@
                     <td>319 Ordencompra</td>
                     <td>331 Comunicación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title=""><i class="fa fa-comments"></i></td>
-                    <td><input type="checkbox" /></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
@@ -172,7 +184,11 @@
                     <td>319 Ordencompra</td>
                     <td>331 Comunicación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td><input type="checkbox" /></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
@@ -183,11 +199,18 @@
                     <td>319 Ordencompra</td>
                     <td>331 Comunicación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td><input type="checkbox" /></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
 
               </table>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#asignModal">Ingresar</a>
             </div>
           </div>
         </div>
@@ -262,8 +285,54 @@
                       </div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <table class="table table-hover text-center">
+                        <thead>
+                          <tr>
+                            <th>Radicado</th>
+                            <th>Fecha</th>
+                            <th>Grupo</th>
+                            <th>Trámite</th>
+                            <th>Evento</th>
+                            <th>Actuación</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>18-11067- -3-0</td>
+                            <td>2018-01-23 08:42</td>
+                            <td>Calificación</td>
+                            <td>301 Bienesservi</td>
+                            <td>319 Ordencompra</td>
+                            <td>331 Comunicación</td>
+                            <td>
+                              <a class="text-danger">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>18-11067- -3-0</td>
+                            <td>2018-01-23 08:42</td>
+                            <td>Calificación</td>
+                            <td>301 Bienesservi</td>
+                            <td>319 Ordencompra</td>
+                            <td>331 Comunicación</td>
+                            <td>
+                              <a class="text-danger">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </form>
               </div>
+
               <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                 <a class="btn btn-primary" href="#" data-dismiss="modal" data-toggle="modal" data-target="#infoModal">Asignar</a>
