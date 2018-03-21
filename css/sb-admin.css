@@ -542,7 +542,7 @@ input:read-only {
   background-color: #ffffff;
   color: dimgray;
   font-weight: normal;
-  font-size: 1.05rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -556,7 +556,9 @@ input:read-only {
 	color: #666666;
 	font-size: 11px;
 }
-
+.table .text-medium {
+	font-size: .8rem;
+}
 /* Checkbox table */
 
 .sic-table-checkbox {
