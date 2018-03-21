@@ -1,6 +1,6 @@
-$("#fija_lista thead tr th:last input:checkbox").click(function () {
+$(".table_check thead tr th:last input:checkbox").click(function () {
     var checkedStatus = this.checked;
-    $("#fija_lista tbody tr td:last-child input:checkbox").each(function () {
+    $(".table_check tbody tr td:last-child input:checkbox").each(function () {
         this.checked = checkedStatus;
     });
 });
