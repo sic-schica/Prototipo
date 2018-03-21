@@ -126,7 +126,7 @@
             <hr>
             <!-- Tabla de radicados-->
             <div class="table-responsive">
-              <table class="table table-hover table-responsive-md table-fixed" id="dataTable" width="100%" cellspacing="0">
+              <table class="table table-hover table-responsive-md table-fixed table_check" width="100%" cellspacing="0">
                 <thead>
                   <tr>
                     <th></th>
@@ -138,9 +138,14 @@
                     <th>Actuación</th>
                     <th></th>
                     <th></th>
+                    <th>
+                      <div type="checkbox" class="sic-table-checkbox"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-medium">
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
                     <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
@@ -151,6 +156,11 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-folder-open  text-secondary" data-toggle="tooltip" title="Vence en 5 días"></i></td>
@@ -162,6 +172,11 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title=""><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignArchModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
@@ -173,6 +188,11 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignIndModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
@@ -184,6 +204,11 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-calendar text-info" data-toggle="tooltip" title="Vence en 38 días"></i></td>
@@ -195,39 +220,11 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-calendar text-info" data-toggle="tooltip" title="Vence en 38 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
@@ -239,6 +236,11 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
@@ -250,6 +252,11 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
@@ -261,241 +268,18 @@
                     <td>411 Presentación</td>
                     <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
                     <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-calendar text-info" data-toggle="tooltip" title="Vence en 38 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-calendar text-info" data-toggle="tooltip" title="Vence en 38 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-calendar text-info" data-toggle="tooltip" title="Vence en 38 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-calendar text-info" data-toggle="tooltip" title="Vence en 38 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 18-11067- -3-0 </a></td>
-                    <td>2018-01-23 08:42</td>
-                    <td>Calificación</td>
-                    <td>400 Demanda protección al consumidor jurisdiccional</td>
-                    <td>362 Demanda</td>
-                    <td>411 Presentación</td>
-                    <td class="text-center text-info" data-toggle="tooltip" title="Este documento fue enviado por Guillermo Hernández para realizar antes del 28 de febrero y enviar a despacho. Adjuntar al expediente correspondiente."><i class="fa fa-comments"></i></td>
-                    <td class="text-center"><a data-toggle="modal" href="" data-target="#asignModal"><i class="fa fa-paper-plane"></i></a></td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#fijacionViewModal">Asignar </a>
           </div>
         </div>
         <!-- /.container-fluid-->
@@ -723,6 +507,7 @@
         <!-- Custom menu-->
         <script src="js/menu_secretaria.js"></script>
         <script src="js/form.js"></script>
+        <script src="js/table-check-select.js"></script>
       </div>
   </body>
 </html>
