@@ -561,7 +561,7 @@ input:read-only {
 
 .sic-table-checkbox {
   clear: both;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .sic-table-checkbox input[type="radio"]:empty,
@@ -580,8 +580,8 @@ input:read-only {
   position: absolute;
   display: block;
   content: '';
-  width: 1em;
-  height: 1em;
+  width: 1.2em;
+  height: 1.2em;
   background: #D1D3D4;
   border-radius: 20%;
 }
@@ -594,7 +594,7 @@ input:read-only {
 .sic-table-checkbox input[type="radio"]:hover:not(:checked):before,
 .sic-table-checkbox input[type="checkbox"]:hover:not(:checked):before {
   content: '\2714';
-  text-indent: .1em;
+  text-indent: .2em;
   color: #fff;
   background: #036ee0;
   opacity: .8;
@@ -609,7 +609,7 @@ input:read-only {
 .sic-table-checkbox input[type="radio"]:checked:before,
 .sic-table-checkbox input[type="checkbox"]:checked:before {
   content: '\2714';
-  text-indent: .1em;
+  text-indent: .2em;
   color: #fff;
   background-color: #036EE0;
   border-radius: 20%;
