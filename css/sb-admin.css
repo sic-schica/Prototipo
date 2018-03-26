@@ -524,6 +524,30 @@ footer.sticky-footer {
 	background-color: #edf2f7;
 }
 
+.sic-header-title{
+  font-family: 'MonsLight',Arial,sans-serif !important;
+  padding: 0px;
+  margin-top:10px;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1rem;
+}
+
+.sic-header-title:after{
+  content: attr(data-label);
+  display: inline-block;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: #fff;
+  position: relative;
+  top: 15px;
+  padding: 10px 7px 0px 10px;
+  line-height: 1;
+  color: gray;
+}
+
 .sic-title-label{
 	opacity: .5;
 }
@@ -674,14 +698,14 @@ input:read-only {
 
 
 }
-.modal-header h5,.modal-header h4{
+.modal-header .modal-title{
     font-family: 'MonsReg',Arial,sans-serif;
     font-size:14px;
     padding: 0px;
     margin-top:50px;
     width:100%
-
 }
+
 .modal-body {
     padding: 0px 30px 0px 30px;
     text-align: center;
@@ -706,13 +730,17 @@ input:read-only {
     text-align:left;
 }
 
+.modal-dialog-lg .modal-header .modal-title,
+.modal-dialog-xl .modal-header .modal-title{
+  margin-top:10px;
+  margin-left:100px;
+  margin-right:100px;
+}
 
 .modal-dialog-xl {
     max-width: 900px;
     margin: 1.75rem auto;
 }
-
-
 
 .modal-content {
 	 margin-top: 20%;
@@ -927,10 +955,6 @@ input[type=number]::-webkit-outer-spin-button {
 	border: 1px solid #ddd;
 	padding: 5px;
 	margin-top: 5px;
-}
-
-.modal-contact-info{
-	font-size: 12px;
 }
 
 /*End Panel Info */
@@ -1195,11 +1219,6 @@ footer.sticky-footer-login a{
   font-size:9px;
 }
 
-.sic-login-btn {
-  background-color: #03FE70;
-  color:#1d256f;
-  border-radius:0;
-}
 .sic-login-a {
   color:#fff;
   text-align: left;
@@ -1207,4 +1226,5 @@ footer.sticky-footer-login a{
 .sic-login-a:hover {
   color:#fff;
 }
+
 /*End Login*/
