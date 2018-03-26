@@ -341,13 +341,16 @@
         </div>
         <!--Modal Info-->
         <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-body">
-                Proceso realizado con éxito!
+              <div class="modal-header">
+                <div class="modal-title" id="logoutModalLabel">Proceso realizado con éxito!</div>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                <a class="btn btn-primary" href="login.html">Salir</a>
               </div>
             </div>
           </div>
@@ -357,7 +360,7 @@
           <div class="modal-dialog  modal-dialog-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5>Notificación por estado <strong><em># 48 </em></strong>de 2018-03-28 </h5>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Notificación # 48 de 2018-03-28"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -389,7 +392,7 @@
           <div class="modal-dialog  modal-dialog-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5>Radicado <small class="sic-title-label">EN 18-11067- -3-0</small> </h5>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado EN 18-11067- -3-0"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -420,7 +423,7 @@
           <div class="modal-dialog  modal-dialog-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5>Acto Número <small class="sic-title-label"> 2018-11681</small> </h5>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Acto Número 2018-11681"></div>                
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>

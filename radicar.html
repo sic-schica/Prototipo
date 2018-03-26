@@ -762,124 +762,12 @@
             </div>
           </div>
         </div>
-        <!--Modal Asignar-->
-        <div class="modal fade" id="asignModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form class="formBox">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <div class="inputBox">
-                        <div class="inputText">Grupo</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="inputBox">
-                        <div class="inputText">Funcionario</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="inputBox ">
-                        <div class="inputText">Observaciones</div>
-                        <textarea class="input" rows="3"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                <a class="btn btn-primary" href="#" data-dismiss="modal" data-toggle="modal" data-target="#infoModal">Asignar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Modal Asignar Archivado-->
-        <div class="modal fade" id="asignArchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form class="formBox">
-                  <div class="row">
-                    <div class="w-100 mx-2 alert bg-warning" role="alert">
-                      Este expediente se encuentra archivado. Al asignarlo este quedará automáticamente activo.
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-lg-3">
-                      <div class="inputBox">
-                        <div class="inputText">Grupo</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="inputBox">
-                        <div class="inputText">Etapa</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="inputBox">
-                        <div class="inputText">Funcionario</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="inputBox ">
-                        <div class="inputText">Observaciones</div>
-                        <textarea class="input" rows="3"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                <a class="btn btn-primary" href="#" data-dismiss="modal" data-toggle="modal" data-target="#infoModal">Asignar</a>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Address Person Modal -->
         <div class="modal fade" id="addressPersonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog  modal-dialog-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h4><i class="fa fa-user"></i> Agregar parte </h4>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Agregar parte"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -924,87 +812,23 @@
             </div>
           </div>
         </div>
-
-        <!--Modal Asignar Radicado Individual-->
-        <div class="modal fade" id="asignIndModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-lg" role="document">
+        <!--Modal Info-->
+        <div class="modal fade" id="infoModalRadicar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
+                <div class="modal-title" id="logoutModalLabel">Se ha generado el radicado 18-11035- -3-0.</div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <form class="formBox">
-                  <div class="row">
-                    <div class="w-100 mx-2 alert bg-info" role="alert">
-                      El expediente se encuentra asignado a usuario <span class="font-italic font-weight-bold"> Juan Perez </span>. Por lo tanto se asignara solo este radicado al usuario seleccionado.
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <div class="inputBox">
-                        <div class="inputText">Grupo</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="inputBox">
-                        <div class="inputText">Funcionario</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="inputBox ">
-                        <div class="inputText">Observaciones</div>
-                        <textarea class="input" rows="3"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
               <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                <a class="btn btn-primary" href="#" data-dismiss="modal" data-toggle="modal" data-target="#infoModal">Asignar</a>
+                <a class="btn btn-primary" href="login.html">Salir</a>
               </div>
             </div>
           </div>
         </div>
-        <!--Modal Info-->
-        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-                Proceso realizado con éxito!
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Modal Info-->
-        <div class="modal fade" id="infoModalRadicar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-                Se ha generado el radicado 18-11035- -3-0.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

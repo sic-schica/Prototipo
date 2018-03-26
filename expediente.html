@@ -182,7 +182,7 @@
                     <a class="nav-link" data-toggle="tab" href="#documentos" role="tab">Lista radicados y actos </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#documentosTramite" role="tab">Lista documentos de tramite</a>
+                    <a class="nav-link" data-toggle="tab" href="#documentosPreliminar" role="tab">Lista documentos de preliminares</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#trasnferirExpediente" role="tab">Trasnferir expediente</a>
@@ -191,7 +191,7 @@
                     <a class="nav-link" data-toggle="tab" href="#radicacion" role="tab">Radicar</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#generarDocumentoTramite" role="tab">Generar documento de tramite</a>
+                    <a class="nav-link" data-toggle="tab" href="#generarDocumentoPreliminar" role="tab">Generar documento preliminar</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#notificacion" role="tab">Notificaciones</a>
@@ -511,8 +511,8 @@
                     </div>
                   </div>
                   <!--END Panel Documentos-->
-                  <!--Panel Documentos de tramite-->
-                  <div class="tab-pane fade" id="documentosTramite" role="tabpanel">
+                  <!--Panel Documentos de Preliminar-->
+                  <div class="tab-pane fade" id="documentosPreliminar" role="tabpanel">
                     <!-- Tabla de documentos-->
                     <div class="table-responsive">
                       <table class="table table-hover table-responsive-md table-fixed" id="dataTable" width="100%" cellspacing="0">
@@ -549,7 +549,7 @@
                       </table>
                     </div>
                   </div>
-                  <!--END Panel Documentos de tramite-->
+                  <!--END Panel Documentos de Preliminar-->
                   <!--Panel Radicación-->
                   <div class="tab-pane fade" id="radicacion" role="tabpanel">
                     <div class="card-body">
@@ -1234,8 +1234,8 @@
                     </div>
                   </div>
                   <!--END Panel Radicación-->
-                  <!--Panel Generar documento tramite-->
-                  <div class="tab-pane fade" id="generarDocumentoTramite" role="tabpanel">
+                  <!--Panel Generar documento Preliminar-->
+                  <div class="tab-pane fade" id="generarDocumentoPreliminar" role="tabpanel">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-lg-1">
@@ -1708,7 +1708,7 @@
                       </div>
                     </div>
                   </div>
-                  <!--END Panel Generar documento tramite-->
+                  <!--END Panel Generar documento Preliminar-->
                   <!--Panel Notificación-->
                   <div class="tab-pane fade" id="notificacion" role="tabpanel">
                     <div class="panel sic-panel-pills w-75 mx-auto">
@@ -2122,13 +2122,16 @@
           </div>
           <!--Modal Info-->
           <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <div class="modal-body">
-                  Proceso realizado con éxito!
+                <div class="modal-header">
+                  <div class="modal-title">Proceso realizado con éxito!</div>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="login.html">Salir</a>
                 </div>
               </div>
             </div>
@@ -2138,7 +2141,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header ">
-                  <h4><i class="fa fa-book"></i> Ayuda </h4>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Ayuda"></div>
                 </div>
                 <div class="modal-body">
 
@@ -2154,7 +2157,7 @@
             <div class="modal-dialog modal-dialog-lg">
               <div class="modal-content">
                 <div class="modal-header ">
-                  <h4><i class="fa fa-address-book"></i> Direcciones </h4>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Direcciones"></div>
                 </div>
                 <div class="modal-body">
                   <div class="table-responsive">
@@ -2202,7 +2205,7 @@
             <div class="modal-dialog modal-dialog-xl">
               <div class="modal-content">
                 <div class="modal-header ">
-                  <h4><i class="fa fa-edit"></i> Crear parte </h4>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Crear parte"></div>
                 </div>
                 <div class="modal-body">
                   <div class="panel sic-panel-pills">
@@ -2532,9 +2535,10 @@
             <div class="modal-dialog modal-dialog-xl">
               <div class="modal-content">
                 <div class="modal-header ">
-                  <h4><i class="fa fa-edit"></i> Modificar parte </h4>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Modificar parte"></div>
                 </div>
                 <div class="modal-body">
+                  <br>
                   <div class="row">
                     <div class="col-lg-3 form-group">
                       <div class="inputBox inputBoxFixed">
@@ -2729,12 +2733,13 @@
           </div>
           <!--Date Modal-->
           <div class="modal fade " id="dateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-md">
               <div class="modal-content">
                 <div class="modal-header ">
-                  <h4><i class="fa fa-calendar"></i> Fecha notificación </h4>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Notificación"></div>
                 </div>
                 <div class="modal-body">
+                  <br>
                   <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy"></div>
                 </div>
                 <div class="modal-footer">
@@ -2748,14 +2753,9 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4><i class="fa fa-trash"></i> Eliminar </h4>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
+                  <h5 class="modal-title">¿Desea desasociar esta persona del expediente?</h5>
                 </div>
-                <div class="modal-body">
-                  Está seguro que desea desasociar esta persona del expediente?
-                </div>
+                <div class="modal-body">Seleccione "Eliminar" si está seguro de desasociar la parte.</div>
                 <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                   <a class="btn btn-danger" href="#" data-dismiss="modal">Eliminar</a>
@@ -2768,14 +2768,9 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4><i class="fa fa-trash"></i> Eliminar Notificación</h4>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
+                  <h5 class="modal-title">¿Desea eliminar Notificación?</h5>
                 </div>
-                <div class="modal-body">
-                  Está seguro que desea eliminar la fecha de notificacion del demandado <span class="font-weight-bold"> Colchones Dormir Bien S.A. </span>?
-                </div>
+                <div class="modal-body">Seleccione "Eliminar" si está seguro de eliminar la fecha de notificacion del demandado.</div>
                 <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                   <a class="btn btn-danger" href="#" data-dismiss="modal">Eliminar</a>
@@ -2788,7 +2783,7 @@
             <div class="modal-dialog  modal-dialog-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4><i class="fa fa-user"></i> Agregar parte </h4>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Agregar parte"></div>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
@@ -2838,12 +2833,13 @@
             <div class="modal-dialog  modal-dialog-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5>Radicado <small class="sic-title-label">EN 18-11067- -3-0</small> </h5>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado EN 18-11067- -3-0 "></div>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
                 </div>
                 <div class="modal-body">
+                  <br>
                   <div class="row">
                     <div class="col-lg-5">
                       <div>
@@ -2923,12 +2919,13 @@
             <div class="modal-dialog  modal-dialog-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5>Acto Número <small class="sic-title-label"> 2018-11681</small> </h5>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Acto Número 2018-11681"></div>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
                 </div>
                 <div class="modal-body">
+                  <br>
                   <div class="row">
                     <div class="col-lg-3">
                       <div>
@@ -3008,7 +3005,7 @@
             <div class="modal-dialog  modal-dialog-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5>Radicado <small class="sic-title-label">EN 18-11067- -3-0</small> </h5>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado EN 18-11067- -3-0"></div>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
@@ -3039,7 +3036,7 @@
             <div class="modal-dialog  modal-dialog-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5>Acto Número <small class="sic-title-label"> 2018-11681</small> </h5>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Acto Número 2018-11681"></div>                  
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>

@@ -722,6 +722,11 @@ input:read-only {
     margin: 1.75rem auto;
 }
 
+.modal-dialog-md {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+
 .modal-dialog-lg .modal-body,
 .modal-dialog-xl .modal-body
  {
@@ -729,7 +734,7 @@ input:read-only {
     opacity:1 !important;
     text-align:left;
 }
-
+.modal-dialog-md .modal-header .modal-title,
 .modal-dialog-lg .modal-header .modal-title,
 .modal-dialog-xl .modal-header .modal-title{
   margin-top:10px;

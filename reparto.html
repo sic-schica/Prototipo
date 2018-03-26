@@ -333,7 +333,7 @@
           <div class="modal-dialog modal-dialog-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Asignar Radicado"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -412,7 +412,7 @@
           <div class="modal-dialog modal-dialog-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Asignar Radicado"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -461,7 +461,7 @@
           <div class="modal-dialog modal-dialog-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Asignar Radicado"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -524,7 +524,7 @@
           <div class="modal-dialog modal-dialog-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Asignar Radicado"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -575,17 +575,21 @@
         </div>
         <!--Modal Info-->
         <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-body">
-                Proceso realizado con éxito!
+              <div class="modal-header">
+                <div class="modal-title" id="logoutModalLabel">Proceso realizado con éxito!</div>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                <a class="btn btn-primary" href="login.html">Salir</a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
