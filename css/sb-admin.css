@@ -661,34 +661,69 @@ input:read-only {
 /* End Table */
 
 /* Modal */
+.modal-header {
+    /* */
+    text-transform: uppercase;
+    padding: 0px;
+    margin-top:0px;
+    border-bottom: 0px;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    text-align: center;
+    background:#fff;
 
+
+}
+.modal-header h5,.modal-header h4{
+    font-family: 'MonsReg',Arial,sans-serif;
+    font-size:14px;
+    padding: 0px;
+    margin-top:50px;
+    width:100%
+
+}
+.modal-body {
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    opacity:.5;
+}
+.modal-footer {
+    display: block;
+    text-align: center;
+    padding: 20px 0px 60px 0px;
+    border-top:0px;
+}
 .modal-dialog-lg {
     max-width: 700px;
     margin: 1.75rem auto;
 }
+
+.modal-dialog-lg .modal-body,
+.modal-dialog-xl .modal-body
+ {
+    margin-top:20px;
+    opacity:1 !important;
+    text-align:left;
+}
+
 
 .modal-dialog-xl {
     max-width: 900px;
     margin: 1.75rem auto;
 }
 
-.modal-header-info {
-    color:#fff;
-    padding:10px 15px 5px;
-    border-bottom:1px solid #eee;
-    background-color: #428BCA;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;
-     border-top-left-radius: 5px;
-     border-top-right-radius: 5px;
-}
+
 
 .modal-content {
 	 margin-top: 20%;
 }
+/*Boton cerrar modal*/
 
+.modal-header .close {
+    margin: -1rem 0rem -1rem auto;
+    font-size: 2.5rem;
+}
+/*Boton cerrar modal*/
 /* End Modal */
 
 /*Forms*/
@@ -912,14 +947,18 @@ input[type=number]::-webkit-outer-spin-button {
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
-	-webkit-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-webkit-border-radius: 3px;
+	-webkit-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-webkit-border-radius: 0px;
 	background-image: none !important;
 	border: none;
 	text-shadow: none;
 	box-shadow: none;
-	transition: all 0.12s linear 0s !important;
+
+	/* transition: all 0.12s linear 0s !important;  */
+  /* transition:none; color .99s ease-in-out,background-color .99s ease-in-out,border-color .99s ease-in-out,box-shadow .99s ease-in-out; */   */
+  text-transform: uppercase;
+  font-size:10px;
 }
 
 .btn-warning{
@@ -932,13 +971,28 @@ input[type=number]::-webkit-outer-spin-button {
 .bg-info{
 	background-color: #5bc0de !important;
 }
-
-.btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-warning:hover, .btn-warning:not(:disabled):not(.disabled):active {
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);
-	color: #fff;
+.btn-primary{
+	background-color: #03FE70 !important;
 }
+.btn-default{
+	background-color: #01BDE2 !important;
+}
+.btn-secondary{
+	background-color: #01BDE2 !important;
+}
+.btn-danger{
+	background-color: #f90b22 !important;
+}
+
+.btn-default, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger,.btn-warning:not(:disabled):not(.disabled):active {
+  color: #1d256f;
+}
+.btn-primary:hover,.btn-default:hover,.btn-secondary:hover,  .btn-warning:hover, .btn-danger:hover,
+.btn .btn-primary:focus,.btn-default:focus,.btn-secondary:focus,  .btn-warning:focus, .btn-danger:focus
+{
+  color: #1d256f !important;
+}
+
 
 /*End Button */
 
