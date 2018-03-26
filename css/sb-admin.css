@@ -552,25 +552,26 @@ input:read-only {
 }
 .sic-header-gray{
   color: #8d8d8d!important;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
   padding-right: .1rem !important;
   padding-left: .1rem !important;
 }
 .sic-header-black{
+  font-family: 'MonsBold',Arial,sans-serif;
   color: #000!important;
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 10px;
   padding-right: .1rem !important;
   padding-left: .1rem !important;
 }
 .sic-header-info-user{
   border-right: 2px solid lightgray;
   text-align: right;
-  padding-right:10px;
+  padding-right:20px;
   padding-top:0px;
   padding-bottom:0px;
-  margin-right:10px;
+  margin-right:20px;
+
 
 }
 
