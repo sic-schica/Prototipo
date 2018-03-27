@@ -968,8 +968,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn {
 	display: inline-block;
-	padding: 9px 12px;
-	padding-top: 7px;
+	padding: 3px 20px 3px 20px;
 	margin-bottom: 0;
 	font-size: 14px;
 	line-height: 20px;
@@ -1015,11 +1014,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn-default, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger,.btn-warning:not(:disabled):not(.disabled):active {
   color: #1d256f;
+  text-transform: uppercase;
 }
 .btn-primary:hover,.btn-default:hover,.btn-secondary:hover,  .btn-warning:hover, .btn-danger:hover,
 .btn .btn-primary:focus,.btn-default:focus,.btn-secondary:focus,  .btn-warning:focus, .btn-danger:focus
 {
   color: #1d256f !important;
+
 }
 
 

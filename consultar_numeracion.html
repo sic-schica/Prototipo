@@ -102,93 +102,18 @@
             </div>
           </div>
         </div>
-        <!--Modal Asignar-->
-        <div class="modal fade" id="asignModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-lg" role="document">
+        <!--Modal Info-->
+        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="asignModalLabel">Asignar Radicado</h5>
+                <div class="modal-title" id="logoutModalLabel">Proceso realizado con éxito!</div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <form class="formBox">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <div class="inputBox">
-                        <div class="inputText">Grupo</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="inputBox">
-                        <div class="inputText">Funcionario</div>
-                        <select id="inputState" class="input">
-                          <option selected></option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="inputBox ">
-                        <div class="inputText">Observaciones</div>
-                        <textarea class="input" rows="3"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <table class="table table-hover">
-                        <tbody class="mic-info">
-                          <tr>
-                            <td><i class="fa fa-folder-open  text-secondary" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                            <td>18-11067- -3-0</td>
-                            <td>Este expediente se encuentra archivado. Para asignarlo debe hacer el proceso de forma individual. Se eliminara  de este proceso.</td>
-                            <td>
-                              <a class="text-danger">
-                                <i class="fa fa-trash"></i>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><i class="fa fa-bell  text-warning" data-toggle="tooltip" title="Vence en 5 días"></i></td>
-                            <td>18-11067- -3-0</td>
-                            <td>El expediente se encuentra asignado a usuario <span class="font-italic font-weight-bold"> Juan Perez </span>.</td>
-                            <td>
-                              <a class="text-danger">
-                                <i class="fa fa-trash"></i>
-                              </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
               <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                <a class="btn btn-primary" href="#" data-dismiss="modal" data-toggle="modal" data-target="#infoModal">Asignar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Modal Info-->
-        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-                Proceso realizado con éxito!
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                <a class="btn btn-primary" data-dismiss="modal" href="#">Aceptar</a>
               </div>
             </div>
           </div>

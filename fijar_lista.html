@@ -122,7 +122,7 @@
                 <tbody class="text-center text-medium">
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -154,7 +154,7 @@
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -186,7 +186,7 @@
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -218,7 +218,7 @@
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -250,7 +250,7 @@
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -282,7 +282,7 @@
                   </tr>
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -354,13 +354,16 @@
         </div>
         <!--Modal Info-->
         <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-body">
-                Proceso realizado con éxito!
+              <div class="modal-header">
+                <div class="modal-title" id="logoutModalLabel">Proceso realizado con éxito!</div>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                <a class="btn btn-primary" data-dismiss="modal" href="#">Aceptar</a>
               </div>
             </div>
           </div>
@@ -370,7 +373,7 @@
           <div class="modal-dialog  modal-dialog-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Fijación en lista # 48 de 2018-03-28 "></div>                
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Fijación en lista # 48 de 2018-03-28 "></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -392,6 +395,37 @@
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" type="button" data-dismiss="modal">Imprimir</button>
+                <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Document Info Modal -->
+        <div class="modal fade" id="documentViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado EN 18-11067- -3-0"></div>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="col-lg-12" style="height: 400px;">
+                  <div class="card mb-3 sic-height-90" >
+                    <div class="card-header">
+                      <i class="fa fa-search"></i> Vista preliminar
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                      Página 1 de 3
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
                 <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
               </div>
             </div>
