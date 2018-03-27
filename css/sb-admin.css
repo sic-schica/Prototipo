@@ -446,9 +446,17 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 
 
 .card-header {
-    background-color: #e9ecef;
+  font-family: 'MonsReg',Arial,sans-serif !important;
+  background-color: #fff;
+  font-weight:bold;
+  color:#000;
+  font-size:12px;
+  text-transform: uppercase;
 }
-
+.card-header i {
+  color:#01BDE0;
+  font-size:15px;
+}
 
 @media (min-width: 576px) {
   .card-columns {
@@ -602,12 +610,12 @@ input:read-only {
 /* Table */
 
  .table thead th {
+   font-family: 'MonsLight',Arial,sans-serif;
   vertical-align: bottom;
-  border-bottom: 2px solid #007bff;
-  background-color: #ffffff;
-  color: dimgray;
+  background-color: #2D2D83;
+  color: #fff;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: .8rem;
   text-align: center;
 }
 
@@ -616,7 +624,12 @@ input:read-only {
   vertical-align: top;
   border-top: 0px;
 }
-
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2D2D83;
+    border-color: #2D2D83;
+}
 .table .mic-info {
 	color: #666666;
 	font-size: 11px;
@@ -649,22 +662,24 @@ input:read-only {
   content: '';
   width: 1.2em;
   height: 1.2em;
-  background: #D1D3D4;
+  background: #fff;
+  border: 1px solid #2D2D83;
   border-radius: 20%;
 }
 
 .sic-table-checkbox input[type="radio"]:hover:not(:checked),
 .sic-table-checkbox input[type="checkbox"]:hover:not(:checked) {
-  color: #888;
+  color: #2D2D83;
 }
 
 .sic-table-checkbox input[type="radio"]:hover:not(:checked):before,
 .sic-table-checkbox input[type="checkbox"]:hover:not(:checked):before {
   content: '\2714';
   text-indent: .2em;
-  color: #fff;
-  background: #036ee0;
+  color: #2D2D83;
+  background: #fff;
   opacity: .8;
+  border: 1px solid #2D2D83;
   border-radius: 20%;
 }
 
@@ -677,8 +692,9 @@ input:read-only {
 .sic-table-checkbox input[type="checkbox"]:checked:before {
   content: '\2714';
   text-indent: .2em;
-  color: #fff;
-  background-color: #036EE0;
+  color: #2D2D83;
+  background-color: #fff;
+  border: 1px solid #2D2D83;
   border-radius: 20%;
 }
 
