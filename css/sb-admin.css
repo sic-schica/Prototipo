@@ -79,7 +79,24 @@ body.fixed-nav {
 .z-1 {
   z-index: 1;
 }
-
+.breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #0065AF;
+    border-radius: 0;
+    color: #fff;
+}
+.breadcrumb a{
+    color: #fff;
+    text-transform:uppercase;
+    /* font-size:14px; */
+}
 #mainNav .navbar-collapse {
   overflow: auto;
   max-height: 75vh;
@@ -802,7 +819,7 @@ input:read-only {
 
 .inputBox .inputTextFixed{
     line-height: 10px;
-	color: #03A9F4;
+	color: #002F81;
     transition: .5s;
     opacity: 1;
 }
@@ -820,7 +837,7 @@ input:read-only {
 .focus .inputText{
 	transform: translateY(-30px);
 	opacity: 1;
-	color: #03A9F4;
+	color: #002F81;
 
 }
 

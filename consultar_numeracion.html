@@ -61,14 +61,11 @@
     </nav>
     <div class="content-wrapper">
       <div class="container-fluid">
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Consultar numeración</a>
-          </li>
-        </ol>
         <!-- Consulta radicados -->
         <div class="card mb-3">
+          <div class="card-header">
+            <i class="fa fa-magic"></i> Consultar numeración
+          </div>
           <div class="card-body">
             <!-- Filtros -->
             <form class="formBox">
@@ -87,7 +84,7 @@
                 </div>
                 <div class="col-sm-2">
                   <div class="inputBox ">
-                    <div class="inputText">Número fijación</div>
+                    <div class="inputText">Número notificación</div>
                     <input type="text" name="" class="input">
                   </div>
                 </div>
@@ -120,11 +117,11 @@
                       <th>Subtipo</th>
                       <th>Número</th>
                       <th>Expediente</th>
-                      <th>Fecha Acto</th>
+                      <th>Fecha Auto</th>
                       <th>Fecha Notificación</th>
                       <th>Fecha Ejecutoria</th>
-                      <th>Fecha Fijación</th>
-                      <th>Fijación</th>
+                      <th>Consecutivos</th>
+                      <th>Notificación</th>
                     </tr>
                   </thead>
                   <tbody class="text-center text-medium">
@@ -135,7 +132,7 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
-                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                     <tr>
@@ -145,7 +142,7 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
-                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                     <tr>
@@ -155,7 +152,7 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
-                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                     <tr>
@@ -165,7 +162,7 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
-                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                     <tr>
@@ -175,7 +172,7 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
-                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                     <tr>
@@ -185,7 +182,7 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
-                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                     <tr>
@@ -195,7 +192,7 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
-                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                     <tr>
@@ -205,7 +202,17 @@
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
                       <td>2018-01-29</td>
+                      <td>23 - 24</td>
+                      <td>48</td>
+                    </tr>
+                    <tr>
+                      <td>Auto inadminte demanda</td>
+                      <td><a data-toggle="modal" href="" data-target="#autoInfoModal">11681</a></td>
+                      <td><a data-toggle="modal" href="" data-target="#radInfoModal">17-11067- -3-0</a></td>
                       <td>2018-01-29</td>
+                      <td>2018-01-29</td>
+                      <td>2018-01-29</td>
+                      <td>23 - 24</td>
                       <td>48</td>
                     </tr>
                   </tbody>
@@ -364,28 +371,34 @@
                   </div>
                 </div>
                   <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                       <div>
                         <span class="sic-title-label">Fecha Acto: </span>
-                        <p>18-01-29 10:45</p>
+                        <p>18-01-29</p>
                       </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                       <div>
                         <span class="sic-title-label">Fecha Notificación: </span>
-                        <p>18-01-29 10:45</p>
+                        <p>18-01-29</p>
                       </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                       <div>
                         <span class="sic-title-label">Fecha Ejecutoria: </span>
-                        <p>18-01-29 10:45</p>
+                        <p>18-01-29</p>
                       </div>
                     </div>
                     <div class="col-lg-3">
                       <div>
-                        <span class="sic-title-label">Fecha Fijación: </span>
-                        <p>18-01-29 10:45</p>
+                        <span class="sic-title-label">Expediente: </span>
+                        <p>17-11067- -3-0</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div>
+                        <span class="sic-title-label">Consecutivos: </span>
+                        <p>22 - 23</p>
                       </div>
                     </div>
                   </div>

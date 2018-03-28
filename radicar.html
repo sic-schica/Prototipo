@@ -64,527 +64,466 @@
     </nav>
     <div class="content-wrapper">
       <div class="container-fluid">
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Radicación</a>
-          </li>
-        </ol>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-lg-1">
-              <!-- Step wizard -->
-              <div class="stepwizard">
-                <div class="stepwizard-row setup-panel">
-                  <div class="stepwizard-step">
-                    <a href="#step-1" class="stepwizard-active"  data-toggle="tooltip" title="Datos generales"><i class="fa fa-home"></i></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-2" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Ingreso de partes"><i class="fa fa-user"></i></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-3" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Plantilla"><i class="fa fa-file-text"></i></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-4" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Documentos adjuntos"><i class="fa fa-paperclip"></i></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-5" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Radicar"><i class="fa fa-check"></i></a>
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fa fa-file"></i> Radicar
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-1">
+                <!-- Step wizard -->
+                <div class="stepwizard">
+                  <div class="stepwizard-row setup-panel">
+                    <div class="stepwizard-step">
+                      <a href="#step-1" class="stepwizard-active"  data-toggle="tooltip" title="Datos generales"><i class="fa fa-home"></i></a>
+                    </div>
+                    <div class="stepwizard-step">
+                      <a href="#step-2" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Ingreso de partes"><i class="fa fa-user"></i></a>
+                    </div>
+                    <div class="stepwizard-step">
+                      <a href="#step-3" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Plantilla"><i class="fa fa-file-text"></i></a>
+                    </div>
+                    <div class="stepwizard-step">
+                      <a href="#step-4" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Documentos adjuntos"><i class="fa fa-paperclip"></i></a>
+                    </div>
+                    <div class="stepwizard-step">
+                      <a href="#step-5" class="stepwizard-disable disabled" disabled="disabled" data-toggle="tooltip" title="Radicar"><i class="fa fa-check"></i></a>
+                    </div>
                   </div>
                 </div>
+                <!-- END Step wizard -->
               </div>
-              <!-- END Step wizard -->
-            </div>
-            <div class="col-lg-11">
-              <form class="formBox" role="form">
-                <!-- Datos generales -->
-                <div class="setup-content" id="step-1">
-                  <h5> Datos generales </h5>
-                  <hr>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-lg-4 form-group">
-                        <div class="inputBox">
-                          <div class="inputText">Trámite</div>
-                          <select id="inputState" class="input" required="required">
-                            <option selected></option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 form-group">
-                        <div class="inputBox">
-                          <div class="inputText">Evento</div>
-                          <select id="inputState" class="input" required="required">
-                            <option selected></option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 form-group">
-                        <div class="inputBox">
-                          <div class="inputText">Actuación</div>
-                          <select id="inputState" class="input" required="required">
-                            <option selected></option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-3 form-group">
-                        <div class="inputBox">
-                          <div class="inputText">Tipo Radicación</div>
-                          <select id="tipoRadicacion" class="input" required="required">
-                            <option selected></option>
-                            <option value="traslado">Traslado</option>
-                            <option value="salida">Salida</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 form-group">
-                        <div class="inputBox">
-                          <div class="inputText">Tipo Documento</div>
-                          <select id="tipoRadicacion" class="input" required="required">
-                            <option selected></option>
-                            <option>Acta</option>
-                            <option>Auto</option>
-                            <option>Generado por el Sistema</option>
-                            <option>Carta</option>
-                            <option>Memorando</option>
-                            <option>Resolución</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 form-group">
-                        <div class="inputBox">
-                          <div class="inputText">Tipo Medio</div>
-                          <select id="tipoRadicacion" class="input" required="required">
-                            <option selected></option>
-                            <option>A la mano</option>
-                            <option>Correo electrónico - Carga Digital</option>
-                            <option>Centro documental</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-1 form-group">
-                        <div class="inputBox">
-                          <div class="inputText"># Folios</div>
-                          <input type="text" name="" class="input" required="required">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="inputBox ">
-                          <div class="inputText">Observaciones</div>
-                          <textarea class="input" rows="2"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
-                  </div>
-                </div>
-                <!-- Fin Datos generales -->
-                <!-- Partes -->
-                <div class="setup-content" id="step-2">
-                  <div class="row">
-                    <div id="panel-salida" class="col-lg-12 collapse">
-                      <h5> Ingreso de partes </h5>
-                      <hr>
-                      <div class="card-body">
-                        <div class="panel sic-panel-pills">
-                          <div class="panel-heading">
-                            <ul class="nav">
-                              <li>
-                                <a class="nav-link active" data-toggle="pill" href="#consult">Buscar parte</a>
-                              </li>
-                              <li>
-                                <a class="nav-link" data-toggle="pill" href="#add_person">Crear parte</a>
-                              </li>
-                            </ul>
+              <div class="col-lg-11">
+                <form class="formBox" role="form">
+                  <!-- Datos generales -->
+                  <div class="setup-content" id="step-1">
+                    <h5> Datos generales </h5>
+                    <hr>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-4 form-group">
+                          <div class="inputBox">
+                            <div class="inputText">Trámite</div>
+                            <select id="inputState" class="input" required="required">
+                              <option selected></option>
+                              <option>...</option>
+                            </select>
                           </div>
-                          <div class="tab-content sic-tab-content">
-                            <div id="consult" class="tab-pane fade in show active">
+                        </div>
+                        <div class="col-lg-4 form-group">
+                          <div class="inputBox">
+                            <div class="inputText">Evento</div>
+                            <select id="inputState" class="input" required="required">
+                              <option selected></option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                          <div class="inputBox">
+                            <div class="inputText">Actuación</div>
+                            <select id="inputState" class="input" required="required">
+                              <option selected></option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 form-group">
+                          <div class="inputBox">
+                            <div class="inputText">Tipo Radicación</div>
+                            <select id="tipoRadicacion" class="input" required="required">
+                              <option selected></option>
+                              <option value="traslado">Traslado</option>
+                              <option value="salida">Salida</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                          <div class="inputBox">
+                            <div class="inputText">Tipo Documento</div>
+                            <select id="tipoRadicacion" class="input" required="required">
+                              <option selected></option>
+                              <option>Acta</option>
+                              <option>Auto</option>
+                              <option>Generado por el Sistema</option>
+                              <option>Carta</option>
+                              <option>Memorando</option>
+                              <option>Resolución</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                          <div class="inputBox">
+                            <div class="inputText">Tipo Medio</div>
+                            <select id="tipoRadicacion" class="input" required="required">
+                              <option selected></option>
+                              <option>A la mano</option>
+                              <option>Correo electrónico - Carga Digital</option>
+                              <option>Centro documental</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-1 form-group">
+                          <div class="inputBox">
+                            <div class="inputText"># Folios</div>
+                            <input type="text" name="" class="input" required="required">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="inputBox ">
+                            <div class="inputText">Observaciones</div>
+                            <textarea class="input" rows="2"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
+                    </div>
+                  </div>
+                  <!-- Fin Datos generales -->
+                  <!-- Partes -->
+                  <div class="setup-content" id="step-2">
+                    <div class="row">
+                      <div id="panel-salida" class="col-lg-12 collapse">
+                        <h5> Ingreso de partes </h5>
+                        <hr>
+                        <div class="card-body">
+                          <div class="panel sic-panel-pills">
+                            <div class="panel-heading">
+                              <ul class="nav">
+                                <li>
+                                  <a class="nav-link active" data-toggle="pill" href="#consult">Buscar parte</a>
+                                </li>
+                                <li>
+                                  <a class="nav-link" data-toggle="pill" href="#add_person">Crear parte</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="tab-content sic-tab-content">
+                              <div id="consult" class="tab-pane fade in show active">
+                                <br>
+                                <div class="row">
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Tipo Documento</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Número Documento</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Nombre</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-1 align-bottom">
+                                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addressPersonModal">Consultar </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="add_person" class="tab-pane fade">
+                                <br>
+                                <div class="row">
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Tipo Documento</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Cédula de ciudadania</option>
+                                        <option>Identificación internacional</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Número Documento</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Genero</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Femenino</option>
+                                        <option>Masculino</option>
+                                        <option>No determinado</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Saludo</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Señor</option>
+                                        <option>Ingeniero</option>
+                                        <option>Señorita</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Tratamiento</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Estiado(a)</option>
+                                        <option>Excelentisimo(a)</option>
+                                        <option>Apreciado</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Primer Nombre</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Segundo Nombre</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Primer Apellido</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Segundo Apellido</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-1">
+                                    <div class="inputBox">
+                                      <div class="inputText">Dirección</div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Tipo</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Principal</option>
+                                        <option>E-mail Correo electrónico</option>
+                                        <option>Apartado aereo</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Departamento</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Cundinamarca</option>
+                                        <option>Norte de Santander</option>
+                                        <option>Putumayo</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Ciudad</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Bogotá DC</option>
+                                        <option>Barranquilla</option>
+                                        <option>San Pedro de los Milagros</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Dirección</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-1">
+                                    <div class="inputBox">
+                                      <div class="inputText">Teléfono</div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Tipo</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Fijo</option>
+                                        <option>Celular</option>
+                                        <option>Fax</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Número</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-1">
+                                    <div class="inputBox">
+                                      <div class="inputText">Correo</div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Tipo</div>
+                                      <select id="inputState" class="input">
+                                        <option selected></option>
+                                        <option>Personal</option>
+                                        <option>Empresa</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 form-group">
+                                    <div class="inputBox">
+                                      <div class="inputText">Correo electrónico</div>
+                                      <input type="text" name="" class="input">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <button class="btn btn-primary pull-right" type="button" > Agregar </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
                               <br>
-                              <div class="row">
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Tipo Documento</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Número Documento</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                                <div class="col-lg-4 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Nombre</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                                <div class="col-lg-1 align-bottom">
-                                  <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addressPersonModal">Consultar </button>
-                                </div>
-                              </div>
+                              <table class="table table-hover table-striped  text-center">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Documento</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Dirección</th>
+                                    <th scope="col">Teléfono</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">CC 1.036.961.782</th>
+                                    <td>Luis Carrillo</td>
+                                    <td>Cll 90 # 45-10 Int 5 Apt 208 Bogotá</td>
+                                    <td>3105698740</td>
+                                    <td>
+                                      <a class="text-danger">
+                                        <i class="fa fa-trash"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">CC 50.239.654</th>
+                                    <td>Patricia Villanueva</td>
+                                    <td>Cll 90 # 45-10 Int 5 Apt 208 Bogotá</td>
+                                    <td>3215987621</td>
+                                    <td>
+                                      <a class="text-danger">
+                                        <i class="fa fa-trash"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </div>
-                            <div id="add_person" class="tab-pane fade">
-                              <br>
-                              <div class="row">
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Tipo Documento</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Cédula de ciudadania</option>
-                                      <option>Identificación internacional</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Número Documento</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Genero</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Femenino</option>
-                                      <option>Masculino</option>
-                                      <option>No determinado</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Saludo</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Señor</option>
-                                      <option>Ingeniero</option>
-                                      <option>Señorita</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Tratamiento</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Estiado(a)</option>
-                                      <option>Excelentisimo(a)</option>
-                                      <option>Apreciado</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Primer Nombre</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Segundo Nombre</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Primer Apellido</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Segundo Apellido</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-sm-1">
-                                  <div class="inputBox">
-                                    <div class="inputText">Dirección</div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Tipo</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Principal</option>
-                                      <option>E-mail Correo electrónico</option>
-                                      <option>Apartado aereo</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Departamento</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Cundinamarca</option>
-                                      <option>Norte de Santander</option>
-                                      <option>Putumayo</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-3 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Ciudad</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Bogotá DC</option>
-                                      <option>Barranquilla</option>
-                                      <option>San Pedro de los Milagros</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-4 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Dirección</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-lg-1">
-                                  <div class="inputBox">
-                                    <div class="inputText">Teléfono</div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Tipo</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Fijo</option>
-                                      <option>Celular</option>
-                                      <option>Fax</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Número</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                                <div class="col-lg-1">
-                                  <div class="inputBox">
-                                    <div class="inputText">Correo</div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-2 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Tipo</div>
-                                    <select id="inputState" class="input">
-                                      <option selected></option>
-                                      <option>Personal</option>
-                                      <option>Empresa</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-lg-4 form-group">
-                                  <div class="inputBox">
-                                    <div class="inputText">Correo electrónico</div>
-                                    <input type="text" name="" class="input">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-lg-12">
-                                  <button class="btn btn-primary pull-right" type="button" > Agregar </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-12">
-                            <table class="table table-hover table-striped  text-center">
-                              <thead>
-                                <tr>
-                                  <th scope="col">Documento</th>
-                                  <th scope="col">Nombre</th>
-                                  <th scope="col">Dirección</th>
-                                  <th scope="col">Teléfono</th>
-                                  <th scope="col"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">CC 1.036.961.782</th>
-                                  <td>Luis Carrillo</td>
-                                  <td>Cll 90 # 45-10 Int 5 Apt 208 Bogotá</td>
-                                  <td>3105698740</td>
-                                  <td>
-                                    <a class="text-danger">
-                                      <i class="fa fa-trash"></i>
-                                    </a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">CC 50.239.654</th>
-                                  <td>Patricia Villanueva</td>
-                                  <td>Cll 90 # 45-10 Int 5 Apt 208 Bogotá</td>
-                                  <td>3215987621</td>
-                                  <td>
-                                    <a class="text-danger">
-                                      <i class="fa fa-trash"></i>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div id="panel-traslado" class="col-lg-12 collapse">
-                      <h5> Ingreso de dependencia </h5>
-                      <hr>
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-lg-4 form-group">
-                            <div class="inputBox">
-                              <div class="inputText">Código</div>
-                              <select id="inputState" class="input">
-                                <option selected></option>
-                                <option>...</option>
-                              </select>
+                      <div id="panel-traslado" class="col-lg-12 collapse">
+                        <h5> Ingreso de dependencia </h5>
+                        <hr>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-lg-4 form-group">
+                              <div class="inputBox">
+                                <div class="inputText">Código</div>
+                                <select id="inputState" class="input">
+                                  <option selected></option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 form-group">
+                              <div class="inputBox">
+                                <div class="inputText">Nombre</div>
+                                <select id="tipoRadicacion" class="input">
+                                  <option selected></option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 align-bottom">
+                              <button class="btn btn-primary" type="button" ><i class="fa fa-plus"></i> </button>
                             </div>
                           </div>
-                          <div class="col-lg-7 form-group">
-                            <div class="inputBox">
-                              <div class="inputText">Nombre</div>
-                              <select id="tipoRadicacion" class="input">
-                                <option selected></option>
-                                <option>...</option>
-                              </select>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <table class="table table-hover table-striped  text-center">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Responsable</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">4005</th>
+                                    <td>Calificación</td>
+                                    <td>Hugo Suarez</td>
+                                    <td>
+                                      <a class="text-danger">
+                                        <i class="fa fa-trash"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4002</th>
+                                    <td>Defensa</td>
+                                    <td>Marcela Jimenez</td>
+                                    <td>
+                                      <a class="text-danger">
+                                        <i class="fa fa-trash"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4007</th>
+                                    <td>Verificación</td>
+                                    <td>Andrea Flores</td>
+                                    <td>
+                                      <a class="text-danger">
+                                        <i class="fa fa-trash"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </div>
-                          </div>
-                          <div class="col-lg-1 align-bottom">
-                            <button class="btn btn-primary" type="button" ><i class="fa fa-plus"></i> </button>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-1"></div>
-                          <div class="col-lg-10">
-                            <table class="table table-hover table-striped  text-center">
-                              <thead>
-                                <tr>
-                                  <th scope="col">Código</th>
-                                  <th scope="col">Nombre</th>
-                                  <th scope="col">Responsable</th>
-                                  <th scope="col"></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">4005</th>
-                                  <td>Calificación</td>
-                                  <td>Hugo Suarez</td>
-                                  <td>
-                                    <a class="text-danger">
-                                      <i class="fa fa-trash"></i>
-                                    </a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">4002</th>
-                                  <td>Defensa</td>
-                                  <td>Marcela Jimenez</td>
-                                  <td>
-                                    <a class="text-danger">
-                                      <i class="fa fa-trash"></i>
-                                    </a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">4007</th>
-                                  <td>Verificación</td>
-                                  <td>Andrea Flores</td>
-                                  <td>
-                                    <a class="text-danger">
-                                      <i class="fa fa-trash"></i>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="col-lg-1"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pull-right">
-                    <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
-                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
-                  </div>
-                </div>
-                <!-- Fin Partes -->
-                <!-- Plantilla -->
-                <div class="setup-content" id="step-3">
-                  <h5> Plantilla </h5>
-                  <hr>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="inputBox">
-                          <div class="inputText">Plantilla</div>
-                          <select id="inputState" class="input sic-input-90" required="required">
-                            <option selected></option>
-                            <option>Contestación recurso</option>
-                          </select>
-                          <a href="" id="file-button-download">
-                            <i class="fa fa-download panel-info-icon"></i>
-                          </a>
-                        </div>
-                        <div class="inputBox">
-                          <div class="inputText">Adjuntar</div>
-                          <input type="file" id="files-input-upload" style="display:none">
-                          <input type="text" id="file-input-name" class="input sic-input-90">
-                          <a href="#" id="file-button-upload">
-                            <i class="fa fa-upload panel-info-icon"></i>
-                          </a>
-                        </div>
-                        <div class="inputBox">
-                          <div class="inputText">Elaboró</div>
-                          <input type="text" name="proyecto" class="input" required="required">
-                        </div>
-                        <div class="inputBox">
-                          <div class="inputText">Revisó</div>
-                          <input type="text" name="Revisio" class="input" required="required">
-                        </div>
-                        <div class="inputBox">
-                          <div class="inputText">Aprobó</div>
-                          <input type="text" name="Firmo" class="input" required="required">
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="card mb-3 sic-height-90">
-                          <div class="card-header">
-                            <i class="fa fa-search"></i> Vista preliminar
-                          </div>
-                          <div class="card-body">
-
-                          </div>
-                          <div class="card-footer text-right">
-                            Página 1 de 3
                           </div>
                         </div>
                       </div>
@@ -594,134 +533,193 @@
                       <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
                     </div>
                   </div>
-                </div>
-                <!-- Fin Plantilla -->
-                <!-- Documentos Adjuntos -->
-                <div class="setup-content" id="step-4">
-                  <h5> Documentos adjuntos </h5>
-                  <hr>
-                  <div class="card-body">
-                    <div class="row">
-                      <div id="actions" class="col-lg-12">
-                        <div class="col-lg-8">
-                          <span class="btn btn-success fileinput-button dz-clickable">
-                            <i class="fa fa-plus"></i>
-                            <span>Agregar archivos</span>
-                          </span>
-                          <button type="submit" class="btn btn-info start">
-                            <i class="fa fa-upload"></i>
-                            <span>Subir archivos</span>
-                          </button>
-                          <button type="reset" class="btn btn-warning cancel">
-                            <i class="fa fa-ban"></i>
-                            <span>Cancelar</span>
-                          </button>
+                  <!-- Fin Partes -->
+                  <!-- Plantilla -->
+                  <div class="setup-content" id="step-3">
+                    <h5> Plantilla </h5>
+                    <hr>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="inputBox">
+                            <div class="inputText">Plantilla</div>
+                            <select id="inputState" class="input sic-input-90" required="required">
+                              <option selected></option>
+                              <option>Contestación recurso</option>
+                            </select>
+                            <a href="" id="file-button-download">
+                              <i class="fa fa-download panel-info-icon"></i>
+                            </a>
+                          </div>
+                          <div class="inputBox">
+                            <div class="inputText">Adjuntar</div>
+                            <input type="file" id="files-input-upload" style="display:none">
+                            <input type="text" id="file-input-name" class="input sic-input-90">
+                            <a href="#" id="file-button-upload">
+                              <i class="fa fa-upload panel-info-icon"></i>
+                            </a>
+                          </div>
+                          <div class="inputBox">
+                            <div class="inputText">Elaboró</div>
+                            <input type="text" name="proyecto" class="input" required="required">
+                          </div>
+                          <div class="inputBox">
+                            <div class="inputText">Revisó</div>
+                            <input type="text" name="Revisio" class="input" required="required">
+                          </div>
+                          <div class="inputBox">
+                            <div class="inputText">Aprobó</div>
+                            <input type="text" name="Firmo" class="input" required="required">
+                          </div>
                         </div>
-
-                        <div class="col-lg-2">
-                          <span class="fileupload-process d-none">
-                            <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                              <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress=""></div>
+                        <div class="col-lg-8">
+                          <div class="card mb-3 sic-height-90">
+                            <div class="card-header">
+                              <i class="fa fa-search"></i> Vista preliminar
                             </div>
-                          </span>
+                            <div class="card-body">
+
+                            </div>
+                            <div class="card-footer text-right">
+                              Página 1 de 3
+                            </div>
+                          </div>
                         </div>
                       </div>
-
-                      <div class="table table-striped file-uploads" class="files" id="previews">
-
-                        <div id="template" class="file-row">
-                          <!-- This is used as the file preview template -->
-                          <div>
-                            <span class="preview"><img data-dz-thumbnail /></span>
-                          </div>
-                          <div>
-                            <p class="name" data-dz-name></p>
-                            <strong class="error text-danger" data-dz-errormessage></strong>
-                          </div>
-                          <div>
-                            <p class="size" data-dz-size></p>
-                            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                              <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
-                            </div>
-                          </div>
-                          <div>
-                            <button class="btn btn-info start">
+                      <div class="pull-right">
+                        <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
+                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fin Plantilla -->
+                  <!-- Documentos Adjuntos -->
+                  <div class="setup-content" id="step-4">
+                    <h5> Documentos adjuntos </h5>
+                    <hr>
+                    <div class="card-body">
+                      <div class="row">
+                        <div id="actions" class="col-lg-12">
+                          <div class="col-lg-8">
+                            <span class="btn btn-success fileinput-button dz-clickable">
+                              <i class="fa fa-plus"></i>
+                              <span>Agregar archivos</span>
+                            </span>
+                            <button type="submit" class="btn btn-info start">
                               <i class="fa fa-upload"></i>
                               <span>Subir archivos</span>
                             </button>
-                            <button data-dz-remove class="btn btn-warning cancel">
+                            <button type="reset" class="btn btn-warning cancel">
                               <i class="fa fa-ban"></i>
                               <span>Cancelar</span>
                             </button>
-                            <button data-dz-remove class="btn btn-danger delete">
-                              <i class="fa fa-trash"></i>
-                              <span>Eliminar</span>
-                            </button>
+                          </div>
+
+                          <div class="col-lg-2">
+                            <span class="fileupload-process d-none">
+                              <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress=""></div>
+                              </div>
+                            </span>
                           </div>
                         </div>
-                      </div>
+
+                        <div class="table table-striped file-uploads" class="files" id="previews">
+
+                          <div id="template" class="file-row">
+                            <!-- This is used as the file preview template -->
+                            <div>
+                              <span class="preview"><img data-dz-thumbnail /></span>
+                            </div>
+                            <div>
+                              <p class="name" data-dz-name></p>
+                              <strong class="error text-danger" data-dz-errormessage></strong>
+                            </div>
+                            <div>
+                              <p class="size" data-dz-size></p>
+                              <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                              </div>
+                            </div>
+                            <div>
+                              <button class="btn btn-info start">
+                                <i class="fa fa-upload"></i>
+                                <span>Subir archivos</span>
+                              </button>
+                              <button data-dz-remove class="btn btn-warning cancel">
+                                <i class="fa fa-ban"></i>
+                                <span>Cancelar</span>
+                              </button>
+                              <button data-dz-remove class="btn btn-danger delete">
+                                <i class="fa fa-trash"></i>
+                                <span>Eliminar</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
 
 
-                    </div>
-                    <div class="pull-right">
-                      <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
-                      <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
+                      </div>
+                      <div class="pull-right">
+                        <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
+                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Siguiente</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- Fin Documentos Adjuntos -->
-                <!-- Radicar -->
-                <div class="setup-content" id="step-5">
-                  <h5> Resumen radicación </h5>
-                  <hr>
-                  <div class="card-body">
-                    <div class="row panel-info">
-                      <div class="col-lg-1"></div>
-                      <div class="col-lg-5">
-                        <div>
-                          Tipo de radicación: Salida
-                          <div class="comment-text">
+                  <!-- Fin Documentos Adjuntos -->
+                  <!-- Radicar -->
+                  <div class="setup-content" id="step-5">
+                    <h5> Resumen radicación </h5>
+                    <hr>
+                    <div class="card-body">
+                      <div class="row panel-info">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5">
+                          <div>
+                            Tipo de radicación: Salida
+                            <div class="comment-text">
+                              <br>
+                              <div>TRA: 400 Demanda protección al consumidor jurisdiccional</div>
+                              <div>EVE: 362 Demanda</div>
+                              <div>ACT: 411 Presentación</div>
+                            </div>
                             <br>
-                            <div>TRA: 400 Demanda protección al consumidor jurisdiccional</div>
-                            <div>EVE: 362 Demanda</div>
-                            <div>ACT: 411 Presentación</div>
+                            <div class="mic-info">
+                              <div>Elaboró: Juan Perez </div>
+                              <div>Revisó: Diana Gonzalez </div>
+                              <div>Aprobó: Luisa Ramirez </div>
+                            </div>
                           </div>
-                          <br>
-                          <div class="mic-info">
-                            <div>Elaboró: Juan Perez </div>
-                            <div>Revisó: Diana Gonzalez </div>
-                            <div>Aprobó: Luisa Ramirez </div>
+                        </div>
+                        <div class="col-lg-5">
+                          <div>
+                            Cantidad de radicados a generar: 2
+                            <div class="comment-text">
+                              <br>
+                              <div>Plantilla: Contestación recurso</div>
+                              <div>Tipo de documento: Carta </div>
+                              <div>Tipo de medio: A la mano </div>
+                            </div>
+                            <br>
+                            <div class="mic-info">
+                              <div>Folios por radicado: 3</div>
+                              <div>Adjuntos por radicado: 1</div>
+                              <div>Total destinatarios : 2</div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-5">
-                        <div>
-                          Cantidad de radicados a generar: 2
-                          <div class="comment-text">
-                            <br>
-                            <div>Plantilla: Contestación recurso</div>
-                            <div>Tipo de documento: Carta </div>
-                            <div>Tipo de medio: A la mano </div>
-                          </div>
-                          <br>
-                          <div class="mic-info">
-                            <div>Folios por radicado: 3</div>
-                            <div>Adjuntos por radicado: 1</div>
-                            <div>Total destinatarios : 2</div>
-                          </div>
-                        </div>
+                      <div class="pull-right">
+                        <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
+                        <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#infoModalRadicar">
+                          <i class="fa fa-flag"></i> Radicar
+                        </button>
                       </div>
                     </div>
-                    <div class="pull-right">
-                      <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
-                      <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#infoModalRadicar">
-                        <i class="fa fa-flag"></i> Radicar
-                      </button>
-                    </div>
                   </div>
-                </div>
-                <!-- Fin Radicar -->
-              </form>
+                  <!-- Fin Radicar -->
+                </form>
+              </div>
             </div>
           </div>
         </div>
