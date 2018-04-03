@@ -563,7 +563,7 @@ footer.sticky-footer {
 .sic-header-title:after{
   content: attr(data-label);
   display: inline-block;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
   background-color: #fff;
   position: relative;

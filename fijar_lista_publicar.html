@@ -64,103 +64,57 @@
         <!-- Consulta radicados -->
         <div class="card mb-3">
           <div class="card-header">
-            <i class="fa fa-magic"></i> Consulta de fijaciones en lista
+            <i class="fa fa-leanpub"></i> Publicar fijación en lista
           </div>
           <div class="card-body">
-            <!-- Filtros -->
-            <form class="formBox">
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="inputBox">
-                    <div class="inputText">Fecha inicial</div>
-                    <input class="input inputDate" id="exampleInputName" type="date">
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="inputBox">
-                    <div class="inputText">Fecha final</div>
-                    <input class="input inputDate" id="exampleInputName" type="date">
-                  </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="inputBox ">
-                    <div class="inputText">Número fijación</div>
-                    <input type="text" name="" class="input">
-                  </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="inputBox ">
-                    <div class="inputText">Número radicación</div>
-                    <input type="text" name="" class="input">
-                  </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="inputBox ">
-                    <div class="inputText">Número expediente</div>
-                    <input type="text" name="" class="input">
-                  </div>
-                </div>
-              </div>
-              <div class="text-right">
-                <a class="btn btn-primary" href="#">Consultar</a>
-              </div>
-            </form>
-            <hr>
-
             <div id="documentosTramite">
               <!-- Tabla de documentos-->
               <div class="table-responsive">
-                <table class="table table-hover table-striped  table-responsive-md table-fixed"
+                <table class="table table-hover table-striped  table-responsive-md table-fixed table_check"
                       width="100%" cellspacing="0" data-click-to-select="true">
                   <thead>
                     <tr>
-                      <th>Fijación</th>
-                      <th>Fecha</th>
+                      <th>Grupo</th>
+                      <th>Última actualización</th>
                       <th>Total radicados</th>
                       <th>Usuario</th>
-                      <th></th>
+                      <th>
+                        <div type="checkbox" class="sic-table-checkbox"/>
+                          <input type="checkbox" name="checkbox"/>
+                        </div>
+                      </th>
                     </tr>
                   </thead>
                   <tbody class="text-center text-medium">
                     <tr>
-                      <td>01</td>
+                      <td>Competencia</td>
                       <td>2018-01-23 08:42</td>
-                      <td>49</td>
+                      <td>32</td>
                       <td>Luz estella millan</td>
-                      <td class="text-center"><a data-toggle="modal" href="" data-target="#fijacionViewModal"><i class="fa fa-file"></i></a></td>
+                      <td>
+                        <div type="checkbox" class="sic-table-checkbox text-center"/>
+                          <input type="checkbox" name="checkbox"/>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <td>02</td>
+                      <td>Consumidor</td>
                       <td>2018-01-23 08:42</td>
                       <td>49</td>
                       <td>Luz estella millan</td>
-                      <td class="text-center"><a data-toggle="modal" href="" data-target="#fijacionViewModal"><i class="fa fa-file"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>03</td>
-                      <td>2018-01-23 08:42</td>
-                      <td>49</td>
-                      <td>Luz estella millan</td>
-                      <td class="text-center"><a data-toggle="modal" href="" data-target="#fijacionViewModal"><i class="fa fa-file"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>04</td>
-                      <td>2018-01-23 08:42</td>
-                      <td>49</td>
-                      <td>Luz estella millan</td>
-                      <td class="text-center"><a data-toggle="modal" href="" data-target="#fijacionViewModal"><i class="fa fa-file"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>05</td>
-                      <td>2018-01-23 08:42</td>
-                      <td>49</td>
-                      <td>Luz estella millan</td>
-                      <td class="text-center"><a data-toggle="modal" href="" data-target="#fijacionViewModal"><i class="fa fa-file"></i></a></td>
+                      <td>
+                        <div type="checkbox" class="sic-table-checkbox text-center"/>
+                          <input type="checkbox" name="checkbox"/>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#fijacionViewModal">Generar fijación </a>
           </div>
         </div>
         <!-- /.container-fluid-->
@@ -239,6 +193,7 @@
         <!-- Custom menu-->
         <script src="js/menu_secretaria.js"></script>
         <script src="js/form.js"></script>
+        <script src="js/table-check-select.js"></script>
       </div>
   </body>
 </html>

@@ -61,10 +61,10 @@
     </nav>
     <div class="content-wrapper">
       <div class="container-fluid">
-        <!-- Consulta radicados -->
+        <!-- Consulta Actos -->
         <div class="card mb-3">
           <div class="card-header">
-            <i class="fa fa-list"></i> Fijar en lista
+            <i class="fa fa-list"></i> Notificar por estado
           </div>
           <div class="card-body">
             <!-- Filtros -->
@@ -72,21 +72,36 @@
               <div >
                 <div class="row">
                   <div class="col-sm-4">
-                    <div class="inputBox ">
-                      <div class="inputText">Número radicado</div>
-                      <input type="text" name="" class="input">
+                    <div class="inputBox">
+                      <div class="inputText">Subtipo</div>
+                      <select id="inputState" class="input" required="required">
+                        <option selected></option>
+                        <option>...</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-2">
                     <div class="inputBox">
                       <div class="inputText">Fecha inicial</div>
                       <input class="input inputDate" id="exampleInputName" type="date">
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-2">
                     <div class="inputBox">
                       <div class="inputText">Fecha final</div>
                       <input class="input inputDate" id="exampleInputName" type="date">
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="inputBox ">
+                      <div class="inputText">Expediente</div>
+                      <input type="text" name="" class="input">
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="inputBox ">
+                      <div class="inputText">Número del auto</div>
+                      <input type="text" name="" class="input">
                     </div>
                   </div>
                 </div>
@@ -96,16 +111,17 @@
               </div>
             </form>
             <hr>
-            <!-- Tabla de fijaciones en lista-->
+            <!-- Tabla de notificacion por estado-->
             <div class="table-responsive">
               <table class="table table-hover table-striped  table-responsive-md table-fixed table_check" id="fija_lista" width="100%" cellspacing="0">
                 <thead>
                   <tr>
                     <th></th>
-                    <th>Radicado</th>
+                    <th>Expediente</th>
                     <th>Demandante(s)</th>
                     <th>Demandado(s)</th>
-                    <th>Tipo de traslado</th>
+                    <th>Acto</th>
+                    <th>Subtipo</th>
                     <th>
                       <div type="checkbox" class="sic-table-checkbox"/>
                         <input type="checkbox" name="checkbox"/>
@@ -116,7 +132,7 @@
                 <tbody class="text-center text-medium">
                   <tr>
                     <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
                     <td class="mic-info">
                       <div>
                         Luis Carrillo
@@ -139,180 +155,157 @@
                         </div>
                       </div>
                     </td>
-                    <td>Recurso de reposición con subsidio de apelación</td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Inadminte demanda</td>
                     <td>
                       <div type="checkbox" class="sic-table-checkbox text-center"/>
                         <input type="checkbox" name="checkbox"/>
                       </div>
                     </td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
-                    <td class="mic-info">
-                      <div>
-                        Luis Carrillo
-                        <div>
-                          CC 1.036.961.782
-                        </div>
-                      </div>
-                      <div>
-                        Patricia Villanueva
-                        <div>
-                          CC 50.239.654
-                        </div>
-                      </div>
-                    </td>
-                    <td class="mic-info">
-                      <div>
-                        Colchones Dormir Bien S.A.
-                        <div>
-                          NIT: 8003146612-5
-                        </div>
-                      </div>
-                    </td>
-                    <td>Contestació demanda</td>
-                    <td>
-                      <div type="checkbox" class="sic-table-checkbox text-center"/>
-                        <input type="checkbox" name="checkbox"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
-                    <td class="mic-info">
-                      <div>
-                        Luis Carrillo
-                        <div>
-                          CC 1.036.961.782
-                        </div>
-                      </div>
-                      <div>
-                        Patricia Villanueva
-                        <div>
-                          CC 50.239.654
-                        </div>
-                      </div>
-                    </td>
-                    <td class="mic-info">
-                      <div>
-                        Colchones Dormir Bien S.A.
-                        <div>
-                          NIT: 8003146612-5
-                        </div>
-                      </div>
-                    </td>
-                    <td>Excepciones previas</td>
-                    <td>
-                      <div type="checkbox" class="sic-table-checkbox text-center"/>
-                        <input type="checkbox" name="checkbox"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
-                    <td class="mic-info">
-                      <div>
-                        Luis Carrillo
-                        <div>
-                          CC 1.036.961.782
-                        </div>
-                      </div>
-                      <div>
-                        Patricia Villanueva
-                        <div>
-                          CC 50.239.654
-                        </div>
-                      </div>
-                    </td>
-                    <td class="mic-info">
-                      <div>
-                        Colchones Dormir Bien S.A.
-                        <div>
-                          NIT: 8003146612-5
-                        </div>
-                      </div>
-                    </td>
-                    <td>Excepciones de fondo</td>
-                    <td>
-                      <div type="checkbox" class="sic-table-checkbox text-center"/>
-                        <input type="checkbox" name="checkbox"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
-                    <td class="mic-info">
-                      <div>
-                        Luis Carrillo
-                        <div>
-                          CC 1.036.961.782
-                        </div>
-                      </div>
-                      <div>
-                        Patricia Villanueva
-                        <div>
-                          CC 50.239.654
-                        </div>
-                      </div>
-                    </td>
-                    <td class="mic-info">
-                      <div>
-                        Colchones Dormir Bien S.A.
-                        <div>
-                          NIT: 8003146612-5
-                        </div>
-                      </div>
-                    </td>
-                    <td>Recurso de reposición</td>
-                    <td>
-                      <div type="checkbox" class="sic-table-checkbox text-center"/>
-                        <input type="checkbox" name="checkbox"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
-                    <td><a data-toggle="modal" href="" data-target="#documentViewModal"> 17-11067- -3-0 </a></td>
-                    <td class="mic-info">
-                      <div>
-                        Luis Carrillo
-                        <div>
-                          CC 1.036.961.782
-                        </div>
-                      </div>
-                      <div>
-                        Patricia Villanueva
-                        <div>
-                          CC 50.239.654
-                        </div>
-                      </div>
-                    </td>
-                    <td class="mic-info">
-                      <div>
-                        Colchones Dormir Bien S.A.
-                        <div>
-                          NIT: 8003146612-5
-                        </div>
-                      </div>
-                    </td>
-                    <td>Recurso de reposición</td>
-                    <td>
-                      <div type="checkbox" class="sic-table-checkbox text-center"/>
-                        <input type="checkbox" name="checkbox"/>
-                      </div>
-                    </td>
-                  </tr>
 
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                    <td class="mic-info">
+                      <div>
+                        Luis Carrillo
+                        <div>
+                          CC 1.036.961.782
+                        </div>
+                      </div>
+                      <div>
+                        Patricia Villanueva
+                        <div>
+                          CC 50.239.654
+                        </div>
+                      </div>
+                    </td>
+                    <td class="mic-info">
+                      <div>
+                        Colchones Dormir Bien S.A.
+                        <div>
+                          NIT: 8003146612-5
+                        </div>
+                      </div>
+                    </td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                    <td class="mic-info">
+                      <div>
+                        Luis Carrillo
+                        <div>
+                          CC 1.036.961.782
+                        </div>
+                      </div>
+                      <div>
+                        Patricia Villanueva
+                        <div>
+                          CC 50.239.654
+                        </div>
+                      </div>
+                    </td>
+                    <td class="mic-info">
+                      <div>
+                        Colchones Dormir Bien S.A.
+                        <div>
+                          NIT: 8003146612-5
+                        </div>
+                      </div>
+                    </td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                    <td class="mic-info">
+                      <div>
+                        Luis Carrillo
+                        <div>
+                          CC 1.036.961.782
+                        </div>
+                      </div>
+                      <div>
+                        Patricia Villanueva
+                        <div>
+                          CC 50.239.654
+                        </div>
+                      </div>
+                    </td>
+                    <td class="mic-info">
+                      <div>
+                        Colchones Dormir Bien S.A.
+                        <div>
+                          NIT: 8003146612-5
+                        </div>
+                      </div>
+                    </td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                    <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                    <td class="mic-info">
+                      <div>
+                        Luis Carrillo
+                        <div>
+                          CC 1.036.961.782
+                        </div>
+                      </div>
+                      <div>
+                        Patricia Villanueva
+                        <div>
+                          CC 50.239.654
+                        </div>
+                      </div>
+                    </td>
+                    <td class="mic-info">
+                      <div>
+                        Colchones Dormir Bien S.A.
+                        <div>
+                          NIT: 8003146612-5
+                        </div>
+                      </div>
+                    </td>
+                    <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                    <td>Adminte demanda</td>
+                    <td>
+                      <div type="checkbox" class="sic-table-checkbox text-center"/>
+                        <input type="checkbox" name="checkbox"/>
+                      </div>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="card-footer">
-            <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#fijacionViewModal">Generar fijación </a>
+          <div class="card-footer text-right">
+            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#notificacionVerViewModal">Ver notificación</a>
+            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#notificacionAsociarViewModal">Asociar</a>
           </div>
         </div>
         <!-- /.container-fluid-->
@@ -357,49 +350,231 @@
                 </button>
               </div>
               <div class="modal-footer">
-                <a class="btn btn-primary" data-dismiss="modal" href="#">Aceptar</a>
+                <a class="btn btn-primary" href="login.html">Salir</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Fijacion Info Modal -->
-        <div class="modal fade" id="fijacionViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="notificacionVerViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog  modal-dialog-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Fijación en lista # 48 de 2018-03-28 "></div>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Actos incluidos en proxima notificación"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
               <div class="modal-body">
-                <div class="col-lg-12" style="height: 400px;">
-                  <div class="card mb-3 sic-height-90" >
-                    <div class="card-header">
-                      <i class="fa fa-search"></i> Vista preliminar
-                    </div>
-                    <div class="card-body">
-
-                    </div>
-                    <div class="card-footer text-right">
-                      Página 1 de 3
-                    </div>
-                  </div>
+                <div class="table-responsive">
+                  <table class="table table-hover table-striped  table-responsive-md table-fixed table_check" id="fija_lista" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Expediente</th>
+                        <th>Demandante(s)</th>
+                        <th>Demandado(s)</th>
+                        <th>Acto</th>
+                        <th>Subtipo</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center text-medium">
+                      <tr>
+                        <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                        <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                        <td class="mic-info">
+                          <div>
+                            Luis Carrillo
+                            <div>
+                              CC 1.036.961.782
+                            </div>
+                          </div>
+                          <div>
+                            Patricia Villanueva
+                            <div>
+                              CC 50.239.654
+                            </div>
+                          </div>
+                        </td>
+                        <td class="mic-info">
+                          <div>
+                            Colchones Dormir Bien S.A.
+                            <div>
+                              NIT: 8003146612-5
+                            </div>
+                          </div>
+                        </td>
+                        <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                        <td>Inadminte demanda</td>
+                        <td class="text-center"><a href="#" class="text-danger"><i class="fa fa-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                        <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                        <td class="mic-info">
+                          <div>
+                            Luis Carrillo
+                            <div>
+                              CC 1.036.961.782
+                            </div>
+                          </div>
+                          <div>
+                            Patricia Villanueva
+                            <div>
+                              CC 50.239.654
+                            </div>
+                          </div>
+                        </td>
+                        <td class="mic-info">
+                          <div>
+                            Colchones Dormir Bien S.A.
+                            <div>
+                              NIT: 8003146612-5
+                            </div>
+                          </div>
+                        </td>
+                        <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                        <td>Adminte demanda</td>
+                        <td class="text-center"><a href="#" class="text-danger"><i class="fa fa-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                        <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                        <td class="mic-info">
+                          <div>
+                            Luis Carrillo
+                            <div>
+                              CC 1.036.961.782
+                            </div>
+                          </div>
+                          <div>
+                            Patricia Villanueva
+                            <div>
+                              CC 50.239.654
+                            </div>
+                          </div>
+                        </td>
+                        <td class="mic-info">
+                          <div>
+                            Colchones Dormir Bien S.A.
+                            <div>
+                              NIT: 8003146612-5
+                            </div>
+                          </div>
+                        </td>
+                        <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                        <td>Adminte demanda</td>
+                        <td class="text-center"><a href="#" class="text-danger"><i class="fa fa-trash"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary" type="button" data-dismiss="modal">Imprimir</button>
                 <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
               </div>
             </div>
           </div>
         </div>
-        <!-- Document Info Modal -->
-        <div class="modal fade" id="documentViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Asoiciar Fijacion  Modal -->
+        <div class="modal fade" id="notificacionAsociarViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog  modal-dialog-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado EN 18-11067- -3-0"></div>
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Actos a incluir en proxima notificación"></div>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="table-responsive">
+                  <table class="table table-hover table-striped  table-responsive-md table-fixed" id="fija_lista" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Expediente</th>
+                        <th>Demandante(s)</th>
+                        <th>Demandado(s)</th>
+                        <th>Acto</th>
+                        <th>Subtipo</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center text-medium">
+                      <tr>
+                        <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                        <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                        <td class="mic-info">
+                          <div>
+                            Luis Carrillo
+                            <div>
+                              CC 1.036.961.782
+                            </div>
+                          </div>
+                          <div>
+                            Patricia Villanueva
+                            <div>
+                              CC 50.239.654
+                            </div>
+                          </div>
+                        </td>
+                        <td class="mic-info">
+                          <div>
+                            Colchones Dormir Bien S.A.
+                            <div>
+                              NIT: 8003146612-5
+                            </div>
+                          </div>
+                        </td>
+                        <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                        <td>Inadminte demanda</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-exclamation-triangle text-danger" data-toggle="tooltip" title="Vencido hace 25 días"></i></td>
+                        <td><a data-toggle="modal" href="" data-target="#documentViewModal">17-11067- -3-0</a></td>
+                        <td class="mic-info">
+                          <div>
+                            Luis Carrillo
+                            <div>
+                              CC 1.036.961.782
+                            </div>
+                          </div>
+                          <div>
+                            Patricia Villanueva
+                            <div>
+                              CC 50.239.654
+                            </div>
+                          </div>
+                        </td>
+                        <td class="mic-info">
+                          <div>
+                            Colchones Dormir Bien S.A.
+                            <div>
+                              NIT: 8003146612-5
+                            </div>
+                          </div>
+                        </td>
+                        <td><a data-toggle="modal" href="" data-target="#autoViewModal">Auto 2018-2565</a></td>
+                        <td>Adminte demanda</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-default" type="button" data-dismiss="modal">Cancelar</button>
+                <button class="btn btn-primary" type="button" data-dismiss="modal">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Auto Info Modal -->
+        <div class="modal fade" id="autoViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Acto Número 2018-11681"></div>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
