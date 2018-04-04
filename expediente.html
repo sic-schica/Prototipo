@@ -166,8 +166,13 @@
                       <span class="sic-title-label">Estado: </span>
                     </div>
                     <div>
-                      <span>En notificación</span>
+                      <span> <a href="#" onclick="toggle_visibility('msgAcumulado');"> Acumulado</a> </span>
                     </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="w-50 mx-auto mt-4 mb-0 text-center alert bg-warning" style="display:none" role="alert" id="msgAcumulado">
+                    Este expediente se encuentra acumulado al expediente: <a href="expediente.html" data-toggle="tooltip" title="Ver expediente"> 17-11067- -3-0 </a>
                   </div>
                 </div>
               </div>
@@ -477,6 +482,7 @@
                             <th>Fecha</th>
                             <th>Descipción</th>
                             <th></th>
+                            <th></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -487,6 +493,7 @@
                             <td>2018-01-23 08:42</td>
                             <td>Demanda protección consumidor jurisdiccional  - demanda  -  presentación</td>
                             <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
+                            <td></td>
                           </tr>
                           <tr>
                             <td>02</td>
@@ -495,6 +502,7 @@
                             <td>2018-02-06 00:00</td>
                             <td>Auto inadminte demanda - Demanda protección al consumidor jurisdiccional</td>
                             <td class="text-center"><a data-toggle="modal" href="" data-target="#autoViewModal"><i class="fa fa-file"></i></a></td>
+                            <td></td>
                           </tr>
                           <tr>
                             <td>02</td>
@@ -503,8 +511,8 @@
                             <td>2018-02-06 00:00</td>
                             <td>Auto inadminte demanda - Demanda protección al consumidor jurisdiccional</td>
                             <td class="text-center"><a data-toggle="modal" href="" data-target="#autoViewModal"><i class="fa fa-file"></i></a></td>
+                            <td class="text-center sic-alert-acumulado" ><i class="fa fa-info-circle" data-toggle="tooltip" title="Acumulado el 20-04-2018 del Expediente 17-11067- -3-0"></i></td>
                           </tr>
-
                           <tr>
                             <td>03</td>
                             <td>Traslado</td>
@@ -512,6 +520,8 @@
                             <td>2018-02-06 07:03</td>
                             <td>Demanda protección consumidor jurisdiccional  - demanda  -  actuación inhabilitada</td>
                             <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
+                            <td class="text-center sic-alert-acumulado" ><i class="fa fa-info-circle" data-toggle="tooltip" title="Acumulado el 20-04-2018"></i></td>
+
                           </tr>
                           <tr>
                             <td>04</td>
@@ -520,6 +530,7 @@
                             <td>2018-01-23 08:42</td>
                             <td>Demanda protección consumidor jurisdiccional  - demanda  -   decision - traslado secretaría general</td>
                             <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
+                            <td></td>
                           </tr>
                         </tbody>
                       </table>
@@ -3174,6 +3185,7 @@
           <script src="js/files.js"></script>
           <script src="js/custom-dropzone.js"></script>
           <script src="js/datepicker.js"></script>
+          <script src="js/temp.js"></script>
           <!-- DataTable-->
           <script src="vendor/datatables/jquery.dataTables.js"></script>
           <script src="vendor/datatables/dataTables.bootstrap4.js"></script>

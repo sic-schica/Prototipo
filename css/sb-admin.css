@@ -623,7 +623,13 @@ input:read-only {
 
 
 }
-
+.sic-alert-acumulado {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2D2D83;
+  opacity:.8;
+}
 /* Table */
 
  .table thead th {
