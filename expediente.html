@@ -139,7 +139,7 @@
                   </div>
                   <div class="col-lg-2">
                     <div>
-                      <span class="sic-title-label">Último grupo: </span>
+                      <span class="sic-title-label">Último Grupo: </span>
                     </div>
                     <div>
                       <span>Defensa </span>
@@ -230,17 +230,11 @@
                           </div>
                           <div class="col-lg-2">
                             <div class="inputBox">
-                              <div class="inputTextFixed">Grupo</div>
-                              <input type="text" name="" class="input" readonly value="Defensa">
-                            </div>
-                          </div>
-                          <div class="col-lg-2">
-                            <div class="inputBox">
                               <div class="inputTextFixed">Tipo Proceso</div>
                               <input type="text" name="" class="input" readonly value="Demanda">
                             </div>
                           </div>
-                          <div class="col-lg-3">
+                          <div class="col-lg-5">
                             <div class="inputBox">
                               <div class="inputTextFixed">Tema</div>
                               <select id="inputState" class="input">
@@ -269,13 +263,8 @@
                               <input type="text" name="" class="input" value="$ 200,000,000">
                             </div>
                           </div>
-                          <div class="col-lg-2">
-                            <div class="inputBox">
-                              <div class="inputTextFixed" data-toggle="tooltip" title="">Estado</div>
-                              <input type="text" name="" class="input" readonly value="En proceso">
-                            </div>
-                          </div>
-                          <div class="col-lg-3">
+
+                          <div class="col-lg-5">
                             <div class="inputBox">
                               <div class="inputTextFixed">Etapa</div>
                               <input type="text" name="" class="input" readonly value="Audiencia probatoria">
@@ -561,7 +550,7 @@
                             <td>Comunicación</td>
                             <td>Requerimiento DIAN</td>
                             <td>Contestación recurso</td>
-                            <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
+                            <td class="text-center"><a data-toggle="modal" href="" data-target="#documentPreViewModal"><i class="fa fa-file"></i></a></td>
                           </tr>
                           <tr>
                             <td>02</td>
@@ -570,7 +559,7 @@
                             <td>Auto inadminte demanda</td>
                             <td>Requerimiento DIAN</td>
                             <td>Contestación recurso</td>
-                            <td class="text-center"><a data-toggle="modal" href="" data-target="#documentViewModal"><i class="fa fa-file"></i></a></td>
+                            <td class="text-center"><a data-toggle="modal" href="" data-target="#documentPreViewModal"><i class="fa fa-file"></i></a></td>
                           </tr>
 
                         </tbody>
@@ -2918,7 +2907,7 @@
             <div class="modal-dialog  modal-dialog-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado EN 18-11067- -3-0 "></div>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado 18-11067- -3-0 "></div>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
@@ -3097,7 +3086,57 @@
             <div class="modal-dialog  modal-dialog-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado EN 18-11067- -3-0"></div>
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Radicado 18-11067- -3-0"></div>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="col-lg-12" style="height: 400px;">
+                    <div class="card mb-3 sic-height-90" >
+                      <div class="card-header">
+                        <i class="fa fa-search"></i> Vista preliminar
+                      </div>
+                      <div class="card-body">
+
+                      </div>
+                      <div class="card-footer text-right">
+                        Página 1 de 3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="sic-title"> Adjunto(s) </div>
+                    <div class="row panel-info">
+                      <div class="col-lg-12">
+                        <div class="mic-info">
+                          ContestaciónDemanda.docx &nbsp;&nbsp;
+                          <a data-toggle="modal" href="#">
+                            <i class="fa fa-download text-success"></i>
+                          </a>
+                        </div>
+                        <div class="mic-info">
+                          FacturaDeCompra.pdf &nbsp;&nbsp;
+                          <a data-toggle="modal" href="#">
+                            <i class="fa fa-download text-success"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Document Info Modal -->
+          <div class="modal fade" id="documentPreViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-xl" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-title sic-header-title" id="asignModalLabel" data-label="Comunicación - Generado 01-01-2018"></div>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
