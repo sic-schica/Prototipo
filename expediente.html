@@ -1063,6 +1063,18 @@
                                 <div class="row">
                                   <div class="col-lg-4">
                                     <div class="inputBox">
+                                      <div class="inputText">Elaboró</div>
+                                      <input type="text" name="proyecto" class="input" required="required">
+                                    </div>
+                                    <div class="inputBox">
+                                      <div class="inputText">Revisó</div>
+                                      <input type="text" name="Revisio" class="input" required="required">
+                                    </div>
+                                    <div class="inputBox">
+                                      <div class="inputText">Aprobó</div>
+                                      <input type="text" name="Firmo" class="input" required="required">
+                                    </div>
+                                    <div class="inputBox">
                                       <div class="inputText">Plantilla</div>
                                       <select id="inputState" class="input sic-input-90" required="required">
                                         <option selected></option>
@@ -1081,17 +1093,12 @@
                                       </a>
                                     </div>
                                     <div class="inputBox">
-                                      <div class="inputText">Elaboró</div>
-                                      <input type="text" name="proyecto" class="input" required="required">
-                                    </div>
-                                    <div class="inputBox">
-                                      <div class="inputText">Revisó</div>
-                                      <input type="text" name="Revisio" class="input" required="required">
-                                    </div>
-                                    <div class="inputBox">
-                                      <div class="inputText">Aprobó</div>
-                                      <input type="text" name="Firmo" class="input" required="required">
-                                    </div>
+                                      <div class="text-right">
+                                        <a class="text-success" data-toggle="modal" href="#">
+                                          <i class="fa fa-cogs"></i> Generar Documento
+                                        </a>
+                                      </div>
+                                    </div>                                    
                                   </div>
                                   <div class="col-lg-8">
                                     <div class="card mb-3 sic-height-90">
@@ -1232,7 +1239,7 @@
                                 </div>
                                 <div class="pull-right">
                                   <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
-                                  <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#infoModal">
+                                  <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#documentViewModal">
                                     <i class="fa fa-flag"></i> Radicar
                                   </button>
                                 </div>
@@ -1623,24 +1630,7 @@
                               <div class="card-body">
                                 <div class="row">
                                   <div class="col-lg-4">
-                                    <div class="inputBox">
-                                      <div class="inputText">Plantilla</div>
-                                      <select id="inputState" class="input sic-input-90" required="required">
-                                        <option selected></option>
-                                        <option>Contestación recurso</option>
-                                      </select>
-                                      <a href="" id="file-button-download">
-                                        <i class="fa fa-download panel-info-icon"></i>
-                                      </a>
-                                    </div>
-                                    <div class="inputBox">
-                                      <div class="inputText">Adjuntar</div>
-                                      <input type="file" id="files-input-upload" style="display:none">
-                                      <input type="text" id="file-input-name" class="input sic-input-90">
-                                      <a href="" id="file-button-upload">
-                                        <i class="fa fa-upload panel-info-icon"></i>
-                                      </a>
-                                    </div>
+
                                     <div class="inputBox">
                                       <div class="inputText">Elaboró</div>
                                       <input type="text" name="proyecto" class="input" required="required">
@@ -1653,7 +1643,34 @@
                                       <div class="inputText">Aprobó</div>
                                       <input type="text" name="Firmo" class="input" required="required">
                                     </div>
+                                    <div class="inputBox">
+                                      <div class="inputText">Plantilla</div>
+                                      <select id="inputState" class="input sic-input-90" required="required">
+                                        <option selected></option>
+                                        <option>Contestación recurso</option>
+                                      </select>
+                                      <a href="" id="file-button-download">
+                                        <i class="fa fa-download panel-info-icon"></i>
+                                      </a>
+                                    </div>
+                                    <div class="inputBox">
+                                      <div class="inputText">Adjuntar</div>
+                                      <input type="file" id="files-input-upload-1" style="display:none">
+                                      <input type="text" id="file-input-name-1" class="input sic-input-90">
+                                      <a href="" id="file-button-upload-1">
+                                        <i class="fa fa-upload panel-info-icon"></i>
+                                      </a>
+                                    </div>
+                                    <div class="inputBox">
+                                      <div class="text-right">
+                                        <a class="text-success" data-toggle="modal" href="#">
+                                          <i class="fa fa-cogs"></i> Generar Documento
+                                        </a>
+                                      </div>
+                                    </div>
+
                                   </div>
+
                                   <div class="col-lg-8">
                                     <div class="card mb-3 sic-height-90">
                                       <div class="card-header">
@@ -1708,7 +1725,7 @@
                                 </div>
                                 <div class="pull-right">
                                   <button class="btn btn-default previewBtn btn-lg mr-2" type="button" >Anterior</button>
-                                  <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#infoModal">
+                                  <button class="btn btn-success nextBtn btn-lg pull-right" type="button" data-toggle="modal" data-target="#documentPreViewModal">
                                     <i class="fa fa-flag"></i> Guardar
                                   </button>
                                 </div>
@@ -3082,7 +3099,7 @@
           </div>
 
           <!-- Document Info Modal -->
-          <div class="modal fade" id="documentViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="documentViewModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog  modal-dialog-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -3100,12 +3117,21 @@
                       <div class="card-body">
 
                       </div>
-                      <div class="card-footer text-right">
-                        Página 1 de 3
+                      <div class="card-footer">
+                        <div class="text-right">
+                          <a class="text-info"  data-toggle="modal" href="#" >
+                            <i class="fa fa-download "></i> Descargar Archivo
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-12">
+                    <div class="text-right">
+                      <a class="text-success"  data-toggle="modal" href="" data-target="#uploadFile">
+                        <i class="fa fa-upload "></i> Adjuntar archivo del radicado
+                      </a>
+                    </div>
                     <div class="sic-title"> Adjunto(s) </div>
                     <div class="row panel-info">
                       <div class="col-lg-12">
@@ -3121,6 +3147,11 @@
                             <i class="fa fa-download text-success"></i>
                           </a>
                         </div>
+                      </div>
+                      <div class="mic-info col-lg-12">
+                        <a class="text-success"  data-toggle="modal" href="" data-target="#uploadFile">
+                          <i class="fa fa-upload "></i> Adjuntar documentos
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -3151,7 +3182,11 @@
 
                       </div>
                       <div class="card-footer text-right">
-                        Página 1 de 3
+                        <div class="text-right">
+                          <a class="text-info"  data-toggle="modal" href="#" >
+                            <i class="fa fa-download "></i> Descargar Archivo
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3181,14 +3216,46 @@
                       <div class="card-body">
 
                       </div>
-                      <div class="card-footer text-right">
-                        Página 1 de 3
+                      <div class="card-footer ">
+                        <div class="text-right">
+                          <a class="text-info"  data-toggle="modal" href="#" >
+                            <i class="fa fa-download "></i> Descargar Archivo
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
                   <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal Upload File-->
+          <div class="modal fade " id="uploadFile" style="z-index:1060"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-md">
+              <div class="modal-content">
+                <div class="modal-header ">
+                  <div class="card-header col-lg-12 text-left">
+                    <i class="fa fa-folder-open"></i> Cargar documento
+                  </div>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-12">
+                        <div class="inputBox">
+                          <input type="file" id="files-input-upload-2" style="display:none">
+                          <input type="text" id="file-input-name-2" class="input sic-input-90">
+                          <a href="#" id="file-button-upload-2">
+                            <i class="fa fa-upload panel-info-icon"></i>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>

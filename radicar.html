@@ -542,12 +542,24 @@
                       <div class="row">
                         <div class="col-lg-4">
                           <div class="inputBox">
+                            <div class="inputText">Elaboró</div>
+                            <input type="text" name="proyecto" class="input" required="required">
+                          </div>
+                          <div class="inputBox">
+                            <div class="inputText">Revisó</div>
+                            <input type="text" name="Revisio" class="input" required="required">
+                          </div>
+                          <div class="inputBox">
+                            <div class="inputText">Aprobó</div>
+                            <input type="text" name="Firmo" class="input" required="required">
+                          </div>
+                          <div class="inputBox">
                             <div class="inputText">Plantilla</div>
                             <select id="inputState" class="input sic-input-90" required="required">
                               <option selected></option>
                               <option>Contestación recurso</option>
                             </select>
-                            <a href="" id="file-button-download">
+                            <a href="#" id="file-button-download">
                               <i class="fa fa-download panel-info-icon"></i>
                             </a>
                           </div>
@@ -560,16 +572,11 @@
                             </a>
                           </div>
                           <div class="inputBox">
-                            <div class="inputText">Elaboró</div>
-                            <input type="text" name="proyecto" class="input" required="required">
-                          </div>
-                          <div class="inputBox">
-                            <div class="inputText">Revisó</div>
-                            <input type="text" name="Revisio" class="input" required="required">
-                          </div>
-                          <div class="inputBox">
-                            <div class="inputText">Aprobó</div>
-                            <input type="text" name="Firmo" class="input" required="required">
+                            <div class="text-right">
+                              <a class="text-success" data-toggle="modal" href="#">
+                                <i class="fa fa-cogs"></i> Generar Documento
+                              </a>
+                            </div>
                           </div>
                         </div>
                         <div class="col-lg-8">

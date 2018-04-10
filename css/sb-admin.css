@@ -597,7 +597,7 @@ input:read-only {
 }
 
 .sic-height-90{
-	height: 92%!important;
+	height: 96%!important;
 }
 .sic-header-gray{
   color: #8d8d8d!important;
@@ -753,7 +753,7 @@ input:read-only {
 .modal-footer {
     display: block;
     text-align: center;
-    padding: 20px 0px 60px 0px;
+    padding: 20px 0px 20px 0px;
     border-top:0px;
 }
 .modal-dialog-lg {
@@ -766,6 +766,7 @@ input:read-only {
     margin: 1.75rem auto;
 }
 
+.modal-dialog-md .modal-body,
 .modal-dialog-lg .modal-body,
 .modal-dialog-xl .modal-body
  {
@@ -1038,6 +1039,7 @@ input[type=number]::-webkit-outer-spin-button {
 .bg-info{
 	background-color: #5bc0de !important;
 }
+.btn-success,
 .btn-primary{
 	background-color: #03FE70 !important;
 }
