@@ -469,7 +469,7 @@
                             <th>Tipo</th>
                             <th>Número</th>
                             <th>Fecha</th>
-                            <th>Descipción</th>
+                            <th>Descripción</th>
                             <th></th>
                             <th></th>
                           </tr>
@@ -538,7 +538,7 @@
                             <th>Fecha</th>
                             <th>Subtipo de documento</th>
                             <th>Observaciones</th>
-                            <th>Pantilla</th>
+                            <th>Plantilla</th>
                             <th></th>
                           </tr>
                         </thead>
@@ -1098,7 +1098,7 @@
                                           <i class="fa fa-cogs"></i> Generar Documento
                                         </a>
                                       </div>
-                                    </div>                                    
+                                    </div>
                                   </div>
                                   <div class="col-lg-8">
                                     <div class="card mb-3 sic-height-90">
@@ -1717,7 +1717,7 @@
                                       <br>
                                       <div class="mic-info">
                                         <div>Cantidad de doumentos a generar: 2</div>
-                                        <div>Folios por radicado: 3</div>
+                                        <div>Folios por documento: 3</div>
                                         <div>Total destinatarios : 2</div>
                                       </div>
                                     </div>
@@ -2017,7 +2017,7 @@
                             <div class="col-lg-2">
                               <div>
                                 <span class="sic-title-label">Auto: </span>
-                                <p><a href="">15260 </a></p>
+                                <p><a data-toggle="modal" href="" data-target="#autoViewModal">15260 </a></p>
                               </div>
                             </div>
                             <div class="col-lg-2">
@@ -2481,7 +2481,7 @@
                         </div>
                         <div class="row">
                           <div class="col-lg-12">
-                            <button class="btn btn-primary pull-right" type="button" > Agregar </button>
+                            <button class="btn btn-primary pull-right" type="button" > Crear </button>
                           </div>
                         </div>
                       </div>
@@ -2584,8 +2584,8 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Agregar</button>
                 </div>
               </div>
             </div>
@@ -2603,15 +2603,15 @@
                 <div class="modal-body">
                   <br>
                   <div class="row">
-                    <div class="col-lg-3 form-group">
+                    <div class="col-lg-2 form-group">
                       <div class="inputBox inputBoxFixed">
                         <div class="inputTextFixed">Tipo Documento</div>
                         <input type="text" name="" class="input" readonly value="Cédula de ciudadania">
                       </div>
                     </div>
-                    <div class="col-lg-3 form-group">
+                    <div class="col-lg-2 form-group">
                       <div class="inputBox inputBoxFixed">
-                        <div class="inputTextFixed">Número Documento</div>
+                        <div class="inputTextFixed">Número</div>
                         <input type="text" name="" class="input" readonly value="1.036.961.782">
                       </div>
                     </div>
@@ -2645,6 +2645,18 @@
                           <option selected>Estimado(a)</option>
                           <option>Excelentisimo(a)</option>
                           <option>Apreciado</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 form-group">
+                      <div class="inputBox inputBoxFixed">
+                        <div class="inputTextFixed">Rol</div>
+                        <select id="inputState" class="input">
+                          <option></option>
+                          <option selected>Demandante</option>
+                          <option>Demandado</option>
+                          <option>Apoderado demandante</option>
+                          <option>Apoderado demandado</option>
                         </select>
                       </div>
                     </div>
@@ -2788,8 +2800,8 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>
@@ -3162,6 +3174,7 @@
               </div>
             </div>
           </div>
+
           <!-- Document Info Modal -->
           <div class="modal fade" id="documentPreViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog  modal-dialog-xl" role="document">
