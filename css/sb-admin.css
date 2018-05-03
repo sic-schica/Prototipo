@@ -881,7 +881,7 @@ input[type=number]::-webkit-outer-spin-button {
 .sic-checkbox div {
   clear: both;
   overflow: hidden;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .sic-checkbox input[type="radio"]:empty,
@@ -893,7 +893,7 @@ input[type=number]::-webkit-outer-spin-button {
 .sic-checkbox input[type="checkbox"]:empty ~ label {
   position: relative;
   opacity: .5;
-  text-indent: 3.25em;
+  text-indent: 2.25em;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
