@@ -220,7 +220,7 @@
             </div>
             <div>
               <hr>
-              <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#infoModal">Archivar</a>
+              <a class="btn btn-primary pull-right" href="#" data-toggle="modal" data-target="#infoArchivar">Archivar</a>
             </div>
           </div>
         </div>
@@ -255,22 +255,50 @@
             </div>
           </div>
         </div>
-        <!--Modal Info-->
-        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!--Modal infoArchivar-->
+        <div class="modal fade" id="infoArchivar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title" id="logoutModalLabel">Proceso realizado con éxito!</div>
+                <h5 class="modal-title" id="logoutModalLabel">El proceso no puede realizarse!</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
+              <div class="modal-body">Los siguientes expedientes tienen tareas pendientes por finalizar
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <table class="table table-hover table-striped ">
+                      <tbody class="mic-info">
+                        <tr>
+                          <td>18-11067- -3-0</td>
+                          <td>Calificar demanda <span class="font-italic font-weight-bold"> Juan Perez </span>.</td></td>
+                        </tr>
+                        <tr>
+                          <td>18-25525- -0-0</td>
+                          <td>Responder recurso de reposicion
+                            <span class="font-italic font-weight-bold"> Maria Juana Castillo </span>.</td>
+                        </tr>
+                        <tr>
+                          <td>18-56989- -0-0</td>
+                          <td>Responder solicitud de nulidad
+                            <span class="font-italic font-weight-bold"> Maria Juana Castillo </span>.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
               <div class="modal-footer">
-                <a class="btn btn-primary" data-dismiss="modal" href="#">Aceptar</a>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cerrar</button>
               </div>
             </div>
           </div>
         </div>
+
+
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
